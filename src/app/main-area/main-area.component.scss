@@ -1,0 +1,61 @@
+.main {
+display: flex;
+flex-direction: column;
+}
+
+.main-area {
+    background-color: black;
+    padding-top: 164px;
+    padding-bottom: 128px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.main-area-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduction-area {
+    color: white;
+    max-width: 55%;
+}
+
+.introduction {
+    color: white;
+    letter-spacing: 0.05em;
+    font-size: 3.2em;
+    font-weight: 700;
+    
+}
+
+.contact-me-button {
+    color: #2dfcd8;
+    border: 1px solid #2dfcd8;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 256px;
+    height: 64px;
+    font-size: 20px;
+}
+
+.img-myself {
+   border-radius: 100%;
+   width: 350px;
+   height: 350px;
+}
+
+.arrow-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.arrow {
+    height: 85px;
+    width: 124px;
+}
+
