@@ -1,0 +1,16 @@
+.imprint-area {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: gray;
+        text-decoration: none;
+        font-weight: 500;
+
+    }
+}

@@ -39,6 +39,13 @@ flex-direction: column;
     max-width: 256px;
     height: 64px;
     font-size: 20px;
+
+    &:hover {
+        background-color: #2dfcd8;
+        color: white;
+        cursor: pointer;
+    }
+
 }
 
 .img-myself {
@@ -57,5 +64,9 @@ flex-direction: column;
 .arrow {
     height: 85px;
     width: 124px;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 

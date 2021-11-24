@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainAreaComponent } from './main-area/main-area.component';
+import { MySkillsComponent } from './my-skills/my-skills.component';
+import { FooterComponent } from './footer/footer.component';
+import { StartComponent } from './start/start.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     ImprintComponent,
-    MainAreaComponent
+    MainAreaComponent,
+    MySkillsComponent,
+    FooterComponent,
+    StartComponent
+   
   ],
   imports: [
     BrowserModule,
