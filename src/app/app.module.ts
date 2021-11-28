@@ -10,6 +10,7 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { FooterComponent } from './footer/footer.component';
 import { StartComponent } from './start/start.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { MyWorkComponent } from './my-work/my-work.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { AboutMeComponent } from './about-me/about-me.component';
     MySkillsComponent,
     FooterComponent,
     StartComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    MyWorkComponent
    
   ],
   imports: [
