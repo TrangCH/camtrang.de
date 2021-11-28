@@ -9,6 +9,7 @@ import { MainAreaComponent } from './main-area/main-area.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { FooterComponent } from './footer/footer.component';
 import { StartComponent } from './start/start.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { StartComponent } from './start/start.component';
     MainAreaComponent,
     MySkillsComponent,
     FooterComponent,
-    StartComponent
+    StartComponent,
+    AboutMeComponent
    
   ],
   imports: [

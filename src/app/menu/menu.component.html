@@ -1,7 +1,15 @@
+<!-- Wenn darkMode = true ist, dann wird die Klasse headerDark angewendet. -->
 <header>
-    <img routerLink="/" src="assets/img/computer_white.png">
 
-    <div>
+
+
+
+
+    <img *ngIf="!darkMode" routerLink="/" src="assets/img/computer_white.png">
+    <img *ngIf="darkMode" routerLink="/" src="assets/img/computer_black.png">
+
+    <!-- Die div bekommt die Klasse darkLinks, wenn die Variable darkMode = true ist. Wenn false, dann div ohne Klasse. -->
+    <div [class.darkLinks]="darkMode">
         <a routerLink="/">Home</a>
         <a href="#">About</a>
         <a href="#">Portfolio</a>
