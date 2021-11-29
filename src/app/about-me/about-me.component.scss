@@ -4,6 +4,9 @@
     padding-left: 128px;
     padding-right: 128px;
     padding-bottom: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .concise {
@@ -41,7 +44,8 @@
 
 .short-information-area {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    
 }
 
 .turquoise {
@@ -62,6 +66,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .short-information-singles-text {

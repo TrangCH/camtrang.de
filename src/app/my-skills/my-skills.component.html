@@ -1,8 +1,10 @@
-<div class="my-skills-area">
+<div class="my-skills-area-background">
     <div class="headline-my-skills">
         MY Skills
     </div>
-    <div id="skills" class="skills-components">
-
+    <div class="skills-components" *ngFor="let skill of mySkills">
+        <img src="{{skill.img}}"><br>
+        {{ skill.img }} <br>
+        {{ skill.title }}
     </div>
 </div>
