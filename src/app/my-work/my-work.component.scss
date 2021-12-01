@@ -1,4 +1,42 @@
 .my-work-area-background {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    padding-left: 128px;
+    padding-right: 128px;
+}
+
+.headline-my-work {
     color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+}
+
+.work-area-button-background {
+    display: flex;
+    justify-content: center;
+}
+
+.work-area-button {
+    color: white;
+    border: 1px solid #fa2759;
+    width: fit-content;
+    height: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: 3px;
+    margin-right: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #fa2759;
+
+    }
 }

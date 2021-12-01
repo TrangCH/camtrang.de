@@ -25,7 +25,7 @@ export class MySkillsComponent {
       title: 'SCRUM',
     },
     {
-      img: 'assets/img/Developer Akademie-Portfolio/github-fill.png',
+      img: 'assets/img/Developer Akademie-Portfolio/Git-Icon-1788C 2.png',
       title: 'Git',
     },
     {

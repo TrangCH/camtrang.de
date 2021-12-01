@@ -1,12 +1,11 @@
 .my-skills-area-background {
     background-color: #1a1a1a;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     padding-top: 32px;
     padding-bottom: 64px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 128px;
+    padding-right: 128px;
 }
 
 .headline-my-skills {
@@ -14,4 +13,53 @@
     font-size: 2em;
     display: flex;
     justify-content: center;
+}
+
+.all-skills-area {
+    padding-left: 128px;
+    padding-right: 128px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 64px;
+}
+
+.skills-components-background {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.skill-img-background {
+    box-shadow: 0px 1px 3px silver;
+    border-radius: 100%;
+    background-color: white;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    z-index: 2;
+    position: relative;
+    top: 32px;
+    transform: translateX(105%);
+}
+
+.skill-img {
+    width: 25px;
+    height: 25px;
+}
+
+.skill-title-area-background {
+    width: 200px;
+    height: 128px;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
 }

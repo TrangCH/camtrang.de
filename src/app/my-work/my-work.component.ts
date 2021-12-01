@@ -5,11 +5,20 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './my-work.component.html',
   styleUrls: ['./my-work.component.scss']
 })
-export class MyWorkComponent implements OnInit {
+export class MyWorkComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  myWork = [
+    {
+      title: 'All',
+    },
+    {
+      title: 'Angular',
+    },
+    {
+      title: 'Java Script',
+    },
+  ];
 
 }
