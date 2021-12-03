@@ -19,15 +19,17 @@
 .work-area-button-background {
     display: flex;
     justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 32px;
 }
 
 .work-area-button {
     color: white;
-    border: 1px solid #fa2759;
-    width: fit-content;
+    border: 2px solid #fa2759;
+    width: 112px;
     height: 64px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: 3px;
     margin-right: 3px;
     display: flex;
@@ -37,6 +39,17 @@
 
     &:hover {
         background-color: #fa2759;
-
     }
+}
+
+.work-img-area-background {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-img-properties {
+    width: 412px;
+    height: 412px;
+    margin: 16px;
 }

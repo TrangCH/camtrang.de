@@ -21,4 +21,19 @@ export class MyWorkComponent {
     },
   ];
 
+  myWorkImges = [
+    {
+      img: 'assets/img/Mühlbach2.jpg',
+    },
+    {
+      img: 'assets/img/Mühlbach9.jpg',
+    },
+    {
+      img: 'assets/img/Mühlbach10.jpg',
+    },
+    {
+      img: 'assets/img/Mühlbach16.jpg',
+    },
+  ];
+
 }

@@ -7,4 +7,10 @@
             {{ work.title }}
         </div>
     </div>
+    <div class="work-img-area-background">
+        <div *ngFor="let workImg of myWorkImges">
+            <img class="work-img-properties" src="{{ workImg.img }}">
+        </div>
+        
+    </div>
 </div>
