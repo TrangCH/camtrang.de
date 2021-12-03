@@ -51,5 +51,24 @@
 .work-img-properties {
     width: 412px;
     height: 412px;
+
+    &:hover {
+        opacity: 0.3;
+    }
+}
+
+#work-img-try-out-parent {
+    width: 412px;
+    height: 412px;
     margin: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0.9;
+}
+
+#work-img-try-out-parent .hidden-child {
+    visibility: hidden;
+}
+
+#work-img-try-out-parent:hover .hidden-child {
+    visibility: visible;
 }
