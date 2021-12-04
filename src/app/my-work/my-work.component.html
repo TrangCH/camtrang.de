@@ -9,10 +9,19 @@
     </div>
     <div class="work-img-area-background">
         <div *ngFor="let workImg of myWorkImges">
-            <div id="work-img-try-out-parent">
-                <img class="work-img-properties" src="{{ workImg.img }}">
-                <div>
-                    
+            <div class="imageBox">
+                <!--<div id="work-img-try-out-parent">-->
+                <div class="imageInn">
+                    <img class="work-img-properties" src="{{ workImg.img }}">
+                    <!--<img class="work-img-properties" src="{{ workImg.img }}">-->
+                </div>
+                <div class="hoverImg" *ngFor="let tryOut of tryOuts">
+                    <div class="try-out-area">
+                        <p class="try-out-title"><b>{{ tryOut.title }}</b></p>
+                        <div class="try-out-short-information">
+                            {{ tryOut.shortInformation }}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

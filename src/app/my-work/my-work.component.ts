@@ -36,4 +36,23 @@ export class MyWorkComponent {
     },
   ];
 
+  tryOuts = [
+    {
+      title: 'Projekt1',
+      shortInformation: 'JavaScript - based jump and run game.',
+    },
+    {
+      title: 'Projekt2',
+      shortInformation: '2.',
+    },
+    {
+      title: 'Projekt3',
+      shortInformation: '3.',
+    },
+    {
+      title: 'Projekt4',
+      shortInformation: '4.',
+    },
+  ];
+
 }

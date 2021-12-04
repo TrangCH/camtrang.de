@@ -51,24 +51,58 @@
 .work-img-properties {
     width: 412px;
     height: 412px;
+    margin: 16px;
 
     &:hover {
         opacity: 0.3;
     }
 }
 
-#work-img-try-out-parent {
+//#work-img-try-out-parent {
+//width: 412px;
+//height: 412px;
+//margin: 16px;
+//background-color: rgba(255, 255, 255, 0.9);
+//opacity: 0.9;
+//}
+
+//#work-img-try-out-parent .hidden-child {
+//visibility: hidden;
+//}
+
+//#work-img-try-out-parent:hover .hidden-child {
+//visibility: visible;
+//}
+
+.imageBox {
+    position: relative;
+    
+}
+
+.imageBox .hoverImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.imageBox:hover .hoverImg {
+    display: block;
+}
+
+.try-out-area {
     width: 412px;
     height: 412px;
     margin: 16px;
     background-color: rgba(255, 255, 255, 0.9);
-    opacity: 0.9;
+    opacity: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-#work-img-try-out-parent .hidden-child {
-    visibility: hidden;
-}
-
-#work-img-try-out-parent:hover .hidden-child {
-    visibility: visible;
+.try-out-title {
+    color: #fa2759;
+    font-size: 1.1em;
 }
