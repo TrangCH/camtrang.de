@@ -2,10 +2,23 @@
     background-color: black;
     padding-left: 128px;
     padding-right: 128px;
+    display: flex;
+  
+}
+
+.contact-me-area-background-inner {
+    padding-top: 64px;
+    padding-left: 211px;
+    padding-right: 128px;
+    padding-bottom: 64px;
 }
 
 .header-contact-me {
     color: #2dfcd8;
-    font-size: 2em;
-    
+    font-size: 3em;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 16px;
 }
+
