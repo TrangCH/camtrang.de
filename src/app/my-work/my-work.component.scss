@@ -52,10 +52,6 @@
     width: 412px;
     height: 412px;
     margin: 16px;
-
-    &:hover {
-        opacity: 0.3;
-    }
 }
 
 //#work-img-try-out-parent {
@@ -90,12 +86,12 @@
     display: block;
 }
 
-.try-out-area {
+.try-out-background {
     width: 412px;
     height: 412px;
     margin: 16px;
     background-color: rgba(255, 255, 255, 0.9);
-    opacity: 0.3;
+    opacity: 0.9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,4 +101,18 @@
 .try-out-title {
     color: #fa2759;
     font-size: 1.1em;
+}
+
+.try-out-button {
+    color: #fa2759;
+    border: 2px solid #fa2759;
+    width: 112px;
+    height: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }

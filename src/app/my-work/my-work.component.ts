@@ -21,38 +21,28 @@ export class MyWorkComponent {
     },
   ];
 
-  myWorkImges = [
+  myWorks = [
     {
       img: 'assets/img/Mühlbach2.jpg',
-    },
-    {
-      img: 'assets/img/Mühlbach9.jpg',
-    },
-    {
-      img: 'assets/img/Mühlbach10.jpg',
-    },
-    {
-      img: 'assets/img/Mühlbach16.jpg',
-    },
-  ];
-
-  tryOuts = [
-    {
       title: 'Projekt1',
       shortInformation: 'JavaScript - based jump and run game.',
     },
     {
+      img: 'assets/img/Mühlbach9.jpg',
       title: 'Projekt2',
       shortInformation: '2.',
     },
     {
+      img: 'assets/img/Mühlbach10.jpg',
       title: 'Projekt3',
       shortInformation: '3.',
     },
     {
+      img: 'assets/img/Mühlbach16.jpg',
       title: 'Projekt4',
       shortInformation: '4.',
     },
   ];
 
+ 
 }

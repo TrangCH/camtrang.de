@@ -8,19 +8,22 @@
         </div>
     </div>
     <div class="work-img-area-background">
-        <div *ngFor="let workImg of myWorkImges">
+        <div *ngFor="let mywork of myWorks; let i=index">
             <div class="imageBox">
                 <!--<div id="work-img-try-out-parent">-->
                 <div class="imageInn">
-                    <img class="work-img-properties" src="{{ workImg.img }}">
+                    <img class="work-img-properties" src="{{ mywork.img }}">
                     <!--<img class="work-img-properties" src="{{ workImg.img }}">-->
                 </div>
-                <div class="hoverImg" *ngFor="let tryOut of tryOuts">
-                    <div class="try-out-area">
-                        <p class="try-out-title"><b>{{ tryOut.title }}</b></p>
-                        <div class="try-out-short-information">
-                            {{ tryOut.shortInformation }}
-                        </div>
+                <div class="hoverImg">
+                    <div class="try-out-background">
+                            <p class="try-out-title"><b>{{ mywork.title }}</b></p>
+                            <div class="try-out-short-information">
+                                {{ mywork.shortInformation }}
+                            </div>
+                            <div class="try-out-button">
+                                Try out
+                            </div>
                     </div>
                 </div>
             </div>
