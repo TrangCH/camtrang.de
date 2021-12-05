@@ -9,7 +9,7 @@ export class MyWorkComponent {
 
   constructor() { }
 
-  myWork = [
+  myWorkTopic = [
     {
       title: 'All',
     },
@@ -24,23 +24,39 @@ export class MyWorkComponent {
   myWorks = [
     {
       img: 'assets/img/Mühlbach2.jpg',
-      title: 'Projekt1',
-      shortInformation: 'JavaScript - based jump and run game.',
+      title: 'Quiz-App',
+      shortInformation: 'JavaScript - Quiz.',
+      link: '',
     },
     {
       img: 'assets/img/Mühlbach9.jpg',
-      title: 'Projekt2',
-      shortInformation: '2.',
+      title: 'Join-Kanban-Board',
+      shortInformation: 'JavaScript - based project management',
+      link: '',
     },
     {
       img: 'assets/img/Mühlbach10.jpg',
-      title: 'Projekt3',
-      shortInformation: '3.',
+      title: 'EL POLLO LOCO',
+      shortInformation: 'JavaScript - based jump and run game.',
+      link: '',
     },
     {
       img: 'assets/img/Mühlbach16.jpg',
       title: 'Projekt4',
       shortInformation: '4.',
+      link: '',
+    },
+    {
+      img: 'assets/img/Mühlbach16.jpg',
+      title: 'Projekt5',
+      shortInformation: '5.',
+      link: '',
+    },
+    {
+      img: 'assets/img/Mühlbach16.jpg',
+      title: 'Projekt6',
+      shortInformation: '6.',
+      link: '',
     },
   ];
 
