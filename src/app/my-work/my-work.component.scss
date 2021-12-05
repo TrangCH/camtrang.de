@@ -115,4 +115,9 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    &:hover {
+        background-color: #fa2759;
+        color: white;
+    }
 }
