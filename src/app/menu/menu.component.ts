@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
+  // Annotation: Extra Eigenschaft einer Variable oder Funktion
   @Input() darkMode = true;
 
   constructor() { }
