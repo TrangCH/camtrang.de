@@ -5,60 +5,82 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './my-work.component.html',
   styleUrls: ['./my-work.component.scss']
 })
-export class MyWorkComponent {
+export class MyWorkComponent implements OnInit {
 
   constructor() { }
+  ngOnInit(): void {
+   this.filtered = this.allProjects;
+  }
 
   myWorkTopic = [
     {
       title: 'All',
+     
     },
     {
       title: 'Angular',
+     
     },
     {
-      title: 'Java Script',
+      title: 'JavaScript',
+     
     },
   ];
 
-  myWorks = [
+  filtered: any;
+
+  showAll() {
+    this.filtered = this.allProjects; // Hier stand vorher allProjects
+  }
+  showCategory(category: any) {
+    this.filtered = this.allProjects.filter(project => project.category === category);
+  }
+
+
+  allProjects = [ // Hier stand vorher allProjects
     {
       img: 'assets/img/Mühlbach2.jpg',
       title: 'Quiz-App',
       shortInformation: 'JavaScript - Quiz.',
       link: '',
+      category: 'JavaScript',
     },
     {
       img: 'assets/img/Mühlbach9.jpg',
       title: 'Join-Kanban-Board',
       shortInformation: 'JavaScript - based project management',
       link: '',
+      category: 'JavaScript',
     },
     {
       img: 'assets/img/Mühlbach10.jpg',
       title: 'EL POLLO LOCO',
       shortInformation: 'JavaScript - based jump and run game.',
       link: '',
+      category: 'JavaScript',
     },
     {
       img: 'assets/img/Mühlbach16.jpg',
       title: 'Projekt4',
       shortInformation: '4.',
       link: '',
+      category: 'Angular',
     },
     {
       img: 'assets/img/Mühlbach16.jpg',
       title: 'Projekt5',
       shortInformation: '5.',
       link: '',
+      category: 'Angular',
     },
     {
       img: 'assets/img/Mühlbach16.jpg',
       title: 'Projekt6',
       shortInformation: '6.',
       link: '',
+      category: 'Angular',
     },
   ];
 
- 
+
 }

@@ -3,27 +3,31 @@
         My work
     </div>
     <div class="work-area-button-background">
-        <div class="work-area-button" *ngFor="let workTopic of myWorkTopic">
-            {{ workTopic.title }}
+        <div class="work-area-button" (click)="showAll()">
+           All
+        </div>
+        <div class="work-area-button" (click)="showCategory('JavaScript')">
+           JavaScript
+        </div>
+        <div class="work-area-button" (click)="showCategory('Angular')">
+           Angular
         </div>
     </div>
     <div class="work-img-area-background">
-        <div *ngFor="let mywork of myWorks; let i=index">
+        <div *ngFor="let project of filtered; let i=index">
             <div class="imageBox">
-                <!--<div id="work-img-try-out-parent">-->
                 <div class="imageInn">
-                    <img class="work-img-properties" src="{{ mywork.img }}">
-                    <!--<img class="work-img-properties" src="{{ workImg.img }}">-->
+                    <img class="work-img-properties" src="{{project.img}}">
                 </div>
                 <div class="hoverImg">
                     <div class="try-out-background">
-                            <p class="try-out-title"><b>{{ mywork.title }}</b></p>
-                            <div class="try-out-short-information">
-                                {{ mywork.shortInformation }}
-                            </div>
-                            <div class="try-out-button">
-                                Try out
-                            </div>
+                        <p class="try-out-title"><b>{{ project.title }}</b></p>
+                        <div class="try-out-short-information">
+                            {{ project.shortInformation }}
+                       </div>
+                        <div class="try-out-button">
+                            Try out
+                        </div>
                     </div>
                 </div>
             </div>
@@ -31,6 +35,3 @@
     </div>
 </div>
 
-<!--<div id="work-img-properties-hover-parent">
-    <img class="work-img-properties hidden-child" src="{{ workImg.img }}">
-</div>-->
