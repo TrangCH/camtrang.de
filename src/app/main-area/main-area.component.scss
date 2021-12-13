@@ -143,3 +143,49 @@
         }
     }
 }
+
+@media(max-width: 500px) {
+    
+    .main-area-background {
+        padding-top: 128px;
+        padding-bottom: 0px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    .introduction {
+        font-size: 2.4em;
+        font-weight: 700;
+    }
+    
+    .contact-me-button {
+        margin-top: 16px;
+        max-width: 100%;
+        height: 64px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .img-myself {
+        border-radius: 100%;
+        width: 256px;
+        height: 256px;
+    }
+    
+    .arrow-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 64px;
+    }
+    
+    .arrow {
+        display: none;
+        height: 85px;
+        width: 124px;
+    
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
