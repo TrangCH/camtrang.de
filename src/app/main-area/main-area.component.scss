@@ -189,3 +189,41 @@
         }
     }
 }
+
+@media(max-width: 440px) {
+    
+    .main-area-background {
+        padding-top: 128px;
+        padding-bottom: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .introduction {
+        font-size: 2em;
+        font-weight: 600;
+    }
+    
+    .img-myself {
+        border-radius: 100%;
+        width: 225px;
+        height: 225px;
+    }
+    
+    .arrow-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 64px;
+    }
+    
+    .arrow {
+        display: none;
+        height: 85px;
+        width: 124px;
+    
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
