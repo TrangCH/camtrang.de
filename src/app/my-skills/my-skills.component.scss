@@ -227,3 +227,60 @@
         padding-top: 12px;
     }
 }
+
+@media(max-width: 485px) {
+    .my-skills-area-background {
+        background-color: #1a1a1a;
+        padding-top: 32px;
+        padding-bottom: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .headline-my-skills {
+        font-size: 2em;
+    }
+    
+    .all-skills-area {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 64px;
+    }
+    
+    .skills-components-background {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .skill-img-background {
+        width: 40px;
+        height: 40px;
+        margin-top: 32px;
+        top: 20px;
+        transform: translateX(68%);
+    }
+    
+    .skill-img {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .skill-title-area-background {
+        width: 85px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        font-size: 0.75em;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 12px;
+    }
+}
