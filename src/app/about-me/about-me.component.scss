@@ -80,3 +80,13 @@
     height: 24px;
 
 }
+
+@media(max-width: 800px) {
+    
+    .about-me-background {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 175px;
+    }
+    
+}
