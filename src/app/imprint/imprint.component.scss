@@ -4,3 +4,12 @@
     padding-left: 150px;
     padding-right: 150px;
 }
+
+@media(max-width: 800px) {
+    .imprint-background {
+        height: 100vh;
+        margin-top: 128px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}

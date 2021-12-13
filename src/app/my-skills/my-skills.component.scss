@@ -97,18 +97,10 @@
     }
     
     .skill-img-background {
-        box-shadow: 0px 1px 3px silver;
-        border-radius: 100%;
-        background-color: white;
         width: 50px;
         height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin-top: 32px;
-        z-index: 2;
-        position: relative;
-        top: 32px;
+        top: 25px;
         transform: translateX(100%);
     }
     
@@ -127,5 +119,54 @@
         justify-content: center;
         align-items: center;
         font-size: 1.1em;
+    }
+}
+
+@media(max-width: 670px) {
+    .my-skills-area-background {
+        background-color: #1a1a1a;
+        padding-top: 64px;
+        padding-bottom: 0px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    .headline-my-skills {
+        font-size: 2em;
+    }
+    
+    .all-skills-area {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 64px;
+    }
+    
+    .skills-components-background {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .skill-img-background {
+        width: 40px;
+        height: 40px;
+        margin-top: 32px;
+        top: 20px;
+        transform: translateX(120%);
+    }
+    
+    .skill-img {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .skill-title-area-background {
+        width: 135px;
+        height: 90px;
+        font-size: 1em;
     }
 }
