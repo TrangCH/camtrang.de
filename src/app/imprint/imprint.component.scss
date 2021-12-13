@@ -13,3 +13,13 @@
         padding-right: 32px;
     }
 }
+
+
+@media(max-width: 500px) {
+    .imprint-background {
+        height: 100vh;
+        margin-top: 128px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
