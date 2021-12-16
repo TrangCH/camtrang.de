@@ -6,10 +6,10 @@
     <img *ngIf="darkMode" routerLink="/" src="assets/img/computer_white.png">
 
     <!-- Die div bekommt die Klasse darkLinks, wenn die Variable darkMode = true ist. Wenn false, dann div ohne Klasse. -->
-    <div class="darkLinks" [class.whiteLinks]="!darkMode">
+    <div class="darkLinks" >
         <!--<a routerLink="/">Home</a>-->
-        <a href="#home">Home</a>
-        <a href="#about-me">About</a>
-        <a href="#my-work">Portfolio</a>
+        <a [class.whiteLinks]="!darkMode" href="#home">Home</a>
+        <a [class.whiteLinks]="!darkMode" href="#about-me">About</a>
+        <a [class.whiteLinks]="!darkMode" href="#my-work">Portfolio</a>
     </div>
 </header>
