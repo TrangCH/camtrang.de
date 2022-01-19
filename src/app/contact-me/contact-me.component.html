@@ -7,18 +7,45 @@
             <font color=#c7c7c7>Get in touch via the form below, or by emailing &nbsp;</font>
             <font color=#2dfcd8>camtrang@web.de</font>
         </div>
-        <form>
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
             <p class="font-color-white">Name</p>
-            <input placeholder="Enter your name" class="input" style="border: 0; color: grey">
+            <input 
+                type="text" 
+                placeholder="Enter your name" 
+                class="input" 
+                style="border: 0; color: grey"
+                id="name"
+                required
+                [(ngModel)]="contact.me"
+                name="name"
+                >
 
             <p class="font-color-white">Email address</p>
-            <input placeholder="Enter your Email address" class="input" style="border: 0; color: grey">
+            <input 
+                type="email"
+                placeholder="Enter your Email address" 
+                [(ngModel)]="contact.email"
+                class="input" 
+                style="border: 0; color: grey"
+                name="email"
+                #email="ngModel"
+                >
 
             <p class="font-color-white">Message</p>
-            <textarea placeholder="Enter your message" class="textarea" style="border: 0; color: grey"></textarea>
+            <textarea 
+                name="message" 
+                id="textare"
+                rows="10"
+                placeholder="Enter your message" 
+                required
+                [(ngModel)]="contact.message"
+                #message="ngModel"
+                class="textarea" 
+                style="border: 0; color: grey">
+            </textarea>
         </form>
         <div class="to-send-button-area">
-            <div class="to-send-button">
+            <div class="to-send-button" [disabled]="!contactForm.valid">
                 Send
             </div>
         </div>
