@@ -24,6 +24,7 @@
             <input 
                 type="email"
                 placeholder="Enter your Email address" 
+                required
                 [(ngModel)]="contact.email"
                 class="input" 
                 style="border: 0; color: grey"
@@ -43,11 +44,12 @@
                 class="textarea" 
                 style="border: 0; color: grey">
             </textarea>
+            <div class="to-send-button-area">
+                <button type="submit" class="to-send-button" [disabled]="!contactForm.form.valid">
+                    Send
+                </button>
+            </div>
         </form>
-        <div class="to-send-button-area">
-            <button type="submit" class="to-send-button" [disabled]="!contactForm.form.valid">
-                Send
-            </button>
-        </div>
+        
     </div>
 </div>

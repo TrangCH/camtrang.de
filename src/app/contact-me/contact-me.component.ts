@@ -44,6 +44,7 @@ export class ContactMeComponent implements OnInit {
   //}
 
   onSubmit(contactForm: NgForm) {
+    console.log('works');
     if (contactForm.submitted && contactForm.form.valid) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contact))
