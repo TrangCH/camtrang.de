@@ -16,7 +16,7 @@
                 style="border: 0; color: grey"
                 id="name"
                 required
-                [(ngModel)]="contact.me"
+                [(ngModel)]="contact.name"
                 name="name"
                 >
 
@@ -45,9 +45,9 @@
             </textarea>
         </form>
         <div class="to-send-button-area">
-            <div class="to-send-button" [disabled]="!contactForm.valid">
+            <button type="submit" class="to-send-button" [disabled]="!contactForm.form.valid">
                 Send
-            </div>
+            </button>
         </div>
     </div>
 </div>

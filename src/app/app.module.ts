@@ -12,6 +12,7 @@ import { StartComponent } from './start/start.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MyWorkComponent } from './my-work/my-work.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
