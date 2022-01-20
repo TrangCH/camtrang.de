@@ -22,7 +22,7 @@ export class ContactMeComponent implements OnInit {
   // endPoint = "http://cam-huy-trang.developerakademie.com/assets/send_mail/send_mail.php";
 
   post = {
-    endPoint: 'http://cam-huy-trang.developerakademie.com/assets/send_mail/send_mail.php', // Ex. www.my-domain/sendMail.php
+    endPoint: 'https://cam-huy-trang.developerakademie.com/assets/send_mail/send_mail.php', // Ex. www.my-domain/sendMail.php
 
     body: (payload: any) => JSON.stringify(payload),
 
