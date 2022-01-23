@@ -12,6 +12,9 @@
         <div class="work-area-button" (click)="showCategory('Angular')">
            Angular
         </div>
+        <div class="work-area-button" (click)="showCategory('API')">
+            API
+         </div>
     </div>
     <div class="work-img-area-background">
         <div *ngFor="let project of filtered; let i=index">
@@ -25,9 +28,9 @@
                         <div class="try-out-short-information">
                             {{ project.shortInformation }}
                        </div>
-                        <div class="try-out-button">
+                        <button [routerLink]="'{{ project.link }}'" class="try-out-button">
                             Try out
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>

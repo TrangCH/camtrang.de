@@ -75,10 +75,10 @@ export class MyWorkComponent implements OnInit {
     },
     {
       img: 'assets/img/Mühlbach16.jpg',
-      title: 'Projekt6',
-      shortInformation: '6.',
+      title: 'Pokédex',
+      shortInformation: "A tabular overview (type, strengths and abilities) of the Pokémon`s",
       link: '',
-      category: 'Angular',
+      category: 'API',
     },
   ];
 
