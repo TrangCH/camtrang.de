@@ -28,8 +28,8 @@
                         <div class="try-out-short-information">
                             {{ project.shortInformation }}
                        </div>
-                        <button [routerLink]="'{{ project.link }}'" class="try-out-button">
-                            Try out
+                        <button (click)="visitProject(project.url)" class="try-out-button">
+                            View project
                         </button>
                     </div>
                 </div>
