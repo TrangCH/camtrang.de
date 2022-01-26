@@ -63,8 +63,11 @@
     }
 }
 
-@media(max-width: 800px) {
+button:disabled {
+    cursor: not-allowed;
+}
 
+@media (max-width: 800px) {
     .contact-me-area-background {
         background-color: black;
         padding-left: 32px;
@@ -72,15 +75,11 @@
         display: flex;
         justify-content: center;
     }
-
 }
 
-@media(max-width: 500px) {
-
+@media (max-width: 500px) {
     .contact-me-area-background {
         padding-left: 16px;
         padding-right: 16px;
     }
-
 }
-
