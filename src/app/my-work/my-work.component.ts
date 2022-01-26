@@ -49,7 +49,7 @@ export class MyWorkComponent implements OnInit {
       category: 'JavaScript',
     },
     {
-      img: 'assets/img/portfolio/kanban_board.png',
+      img: 'assets/img/portfolio/kanban_board3.png',
       title: 'Join-Kanban-Board',
       shortInformation: 'JavaScript and group project - based project management',
       url: 'http://gruppe-95.developerakademie.com/',
