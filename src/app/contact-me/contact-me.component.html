@@ -8,7 +8,7 @@
             <font color=#2dfcd8>camtrang@web.de</font>
         </div>
         <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
-            <p class="font-color-white">Name</p>
+            <p class="font-color-white">Name<font color=red>*</font></p>
             <input 
                 type="text" 
                 placeholder="Enter your name" 
@@ -20,10 +20,10 @@
                 name="name"
                 >
 
-            <p class="font-color-white">Email address</p>
+            <p class="font-color-white">Email address<font color=red>*</font></p>
             <input 
                 type="email"
-                placeholder="Enter your Email address" 
+                placeholder="Enter your email address" 
                 required
                 [(ngModel)]="contact.email"
                 class="input" 
@@ -33,7 +33,7 @@
                 email
                 >
 
-            <p class="font-color-white">Message</p>
+            <p class="font-color-white">Message<font color=red>*</font></p>
             <textarea 
                 name="message" 
                 id="textare"

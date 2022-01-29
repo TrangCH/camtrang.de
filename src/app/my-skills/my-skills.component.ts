@@ -10,7 +10,7 @@ export class MySkillsComponent {
   mySkills = [
     {
       img: 'assets/img/Developer Akademie-Portfolio/java script.png', // 
-      title: 'Java Script',
+      title: 'JavaScript',
     },
     {
       img: 'assets/img/Developer Akademie-Portfolio/angular.png',

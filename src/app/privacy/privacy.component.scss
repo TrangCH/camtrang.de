@@ -1,0 +1,26 @@
+.data-protection-background {
+    height: 100vh;
+    margin-top: 128px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 300px;
+}
+
+@media(max-width: 800px) {
+    .data-protection-background {
+        height: 100vh;
+        margin-top: 128px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+
+@media(max-width: 500px) {
+    .data-protection-background {
+        height: 100vh;
+        margin-top: 128px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

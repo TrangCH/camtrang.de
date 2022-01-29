@@ -14,6 +14,7 @@ import { MyWorkComponent } from './my-work/my-work.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     StartComponent,
     AboutMeComponent,
     MyWorkComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    PrivacyComponent
    
   ],
   imports: [
