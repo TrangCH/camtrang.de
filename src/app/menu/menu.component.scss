@@ -43,13 +43,12 @@ header {
 }
 
 .whiteLinks {
-    
-        color: black !important;
+    color: white !important;
+    //color: black !important;
 
-        &:hover {
-            color: #fa2759 !important;
-        }
-    
+    &:hover {
+        color: #fa2759 !important;
+    }
 }
 
 .headerWhite {
@@ -57,20 +56,21 @@ header {
     color: black;
 }
 
-@media(max-width: 800px) {
+.header-black {
+    background-color: black;
+    color: white;
+}
 
+@media (max-width: 800px) {
     header {
         padding-left: 32px;
         padding-right: 32px;
     }
-    
 }
 
-@media(max-width: 500px) {
-
+@media (max-width: 500px) {
     header {
         padding-left: 16px;
         padding-right: 16px;
     }
-    
 }
