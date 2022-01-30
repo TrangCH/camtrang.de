@@ -42,9 +42,9 @@ export class ContactMeComponent implements OnInit {
       this.http
         .post(this.post.endPoint, this.post.body(this.contact))
         .subscribe({
-          next: (response) => console.log(response),
-          error: (error) => console.error(error),
-          complete: () => console.info('send post complete'),
+          next: (response) => alert("Hello, your message is being sent."),//console.log(response),
+          error: (error) => alert("Hello, your message could not be sent. You can also send a message to Cam Trang via your email account."),//console.error(error),
+          complete: () => alert("Hello, your message has been sent.")//console.info('send post complete'),
         });
     }
   }
