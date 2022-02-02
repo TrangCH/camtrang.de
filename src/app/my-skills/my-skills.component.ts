@@ -13,7 +13,7 @@ export class MySkillsComponent {
       title: 'JavaScript',
     },
     {
-      img: 'assets/img/Developer Akademie-Portfolio/angular.png',
+      img: 'assets/img/Developer Akademie-Portfolio/angular-original.png',
       title: 'Angular',
     },
     {

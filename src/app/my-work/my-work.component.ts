@@ -29,28 +29,21 @@ export class MyWorkComponent implements OnInit {
   ];
 
   filtered: any;
+  currentFilter = '';
 
   showAll() {
     this.filtered = this.allProjects; // Hier stand vorher allProjects
-
+    this.currentFilter = '';
   }
   showCategory(category: any) {
     this.filtered = this.allProjects.filter(project => project.category === category);
+    this.currentFilter = category;
   }
 
   visitProject(url: string) {
     window.open(url, "_blank");
   }
 
-  //toggleButton() {
-  //let projectButton = document.querySelector(".work-area-button-background").querySelectorAll("button");
-  //projectButton.forEach(element => {
-  //  element.addEventListener("click", function() {
-  //    projectButton?.forEach(project=>project.classList.remove("background-color-pink"))
-  //    this.classList.add("background-color-pink");
-  //  })
-  //});
-  //}
 
   allProjects = [
     {
@@ -93,7 +86,7 @@ export class MyWorkComponent implements OnInit {
       title: 'Pokédex',
       shortInformation: "A tabular overview (type, strengths and abilities) of the Pokémon`s",
       url: './assets/portfolio/pokédex/index.html',
-      category: 'API',
+      category: 'APIs',
     },
   ];
 
