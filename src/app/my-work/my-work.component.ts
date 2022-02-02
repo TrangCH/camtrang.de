@@ -6,24 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-work.component.scss']
 })
 export class MyWorkComponent implements OnInit {
+  id: any;
 
   constructor() { }
   ngOnInit(): void {
-   this.filtered = this.allProjects;
+    this.filtered = this.allProjects;
   }
 
   myWorkTopic = [
     {
       title: 'All',
-     
+
     },
     {
       title: 'Angular',
-     
+
     },
     {
       title: 'JavaScript',
-     
+
     },
   ];
 
@@ -31,6 +32,7 @@ export class MyWorkComponent implements OnInit {
 
   showAll() {
     this.filtered = this.allProjects; // Hier stand vorher allProjects
+
   }
   showCategory(category: any) {
     this.filtered = this.allProjects.filter(project => project.category === category);
@@ -40,7 +42,17 @@ export class MyWorkComponent implements OnInit {
     window.open(url, "_blank");
   }
 
-  allProjects = [ 
+  //toggleButton() {
+  //let projectButton = document.querySelector(".work-area-button-background").querySelectorAll("button");
+  //projectButton.forEach(element => {
+  //  element.addEventListener("click", function() {
+  //    projectButton?.forEach(project=>project.classList.remove("background-color-pink"))
+  //    this.classList.add("background-color-pink");
+  //  })
+  //});
+  //}
+
+  allProjects = [
     {
       img: 'assets/img/portfolio/quiz_app_start_screen.png',
       title: 'Quiz-App',

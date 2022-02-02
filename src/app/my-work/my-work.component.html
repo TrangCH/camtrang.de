@@ -3,18 +3,18 @@
         My work
     </div>
     <div class="work-area-button-background">
-        <div class="work-area-button" (click)="showAll()">
+        <button class="work-area-button background-color-pink" (click)="showAll()" id="all">
            All
-        </div>
-        <div class="work-area-button" (click)="showCategory('JavaScript')">
+        </button>
+        <button class="work-area-button" (click)="showCategory('JavaScript')" id="javascript">
            JavaScript
-        </div>
-        <div class="work-area-button" (click)="showCategory('Angular')">
+        </button>
+        <button class="work-area-button" (click)="showCategory('Angular')" id="angular">
            Angular
-        </div>
-        <div class="work-area-button" (click)="showCategory('API')">
-            API
-         </div>
+        </button>
+        <button class="work-area-button" (click)="showCategory('API')" id="apis">
+            APIs
+         </button>
     </div>
     <div class="work-img-area-background">
         <div *ngFor="let project of filtered; let i=index">

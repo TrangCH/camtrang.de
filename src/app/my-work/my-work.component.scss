@@ -26,7 +26,7 @@
 .work-area-button {
     color: white;
     border: 2px solid #fa2759;
-    width: 112px;
+    width: 156px;
     height: 64px;
     padding-left: 16px;
     padding-right: 16px;
@@ -41,6 +41,10 @@
     &:hover {
         background-color: #fa2759;
     }
+}
+
+.background-color-pink {
+    background-color: #fa2759;
 }
 
 .work-img-area-background {
@@ -102,14 +106,15 @@
 
 .try-out-title {
     color: #fa2759;
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 .try-out-button {
     color: #fa2759;
     border: 2px solid #fa2759;
-    width: 112px;
-    height: 64px;
+    font-size: 1.5em;
+    width: 200px;
+    height: 75px;
     padding-left: 16px;
     padding-right: 16px;
     margin-top: 64px;
@@ -125,7 +130,8 @@
 }
 
 .try-out-short-information {
-    max-width: 150px;
+    max-width: 175px;
+    text-align: center;
 }
 
 @media(max-width: 800px) {
@@ -197,12 +203,13 @@
     
     .try-out-title {
         color: #fa2759;
-        font-size: 1em;
+        font-size: 1.25em;
     }
     
     .try-out-button {
-        width: 100px;
-        height: 55px;
+        width: 175px;
+        height: 75px;
+        font-size: 1.25em;
         padding-left: 16px;
         padding-right: 16px;
         margin-top: 64px;
@@ -282,8 +289,9 @@
     }
     
     .try-out-button {
-        width: 100px;
-        height: 55px;
+        width: 125px;
+        height: 65px;
+        font-size: 1em;
         padding-left: 16px;
         padding-right: 16px;
         margin-top: 64px;
