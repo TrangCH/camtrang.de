@@ -47,13 +47,6 @@ export class MyWorkComponent implements OnInit {
 
   allProjects = [
     {
-      img: 'assets/img/portfolio/quiz_app_start_screen.png',
-      title: 'Quiz-App',
-      shortInformation: 'JavaScript - Quiz.',
-      url: './assets/portfolio/quiz_app/index.html',
-      category: 'JavaScript',
-    },
-    {
       img: 'assets/img/portfolio/kanban_board3.png',
       title: 'Join-Kanban-Board',
       shortInformation: 'JavaScript and group project - based project management',
