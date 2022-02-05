@@ -3,16 +3,16 @@
         My work
     </div>
     <div class="work-area-button-background">
-        <button class="work-area-button" (click)="showAll()" id="all" [class.active]="currentFilter === ''">
+        <button class="button work-area-button" (click)="showAll()" id="all" [class.active]="currentFilter === ''">
            All
         </button>
-        <button class="work-area-button" (click)="showCategory('JavaScript')" [class.active]="currentFilter === 'JavaScript'">
+        <button class="button work-area-button" (click)="showCategory('JavaScript')" [class.active]="currentFilter === 'JavaScript'">
            JavaScript
         </button>
-        <button class="work-area-button" (click)="showCategory('Angular')" [class.active]="currentFilter === 'Angular'">
+        <button class="button work-area-button" (click)="showCategory('Angular')" [class.active]="currentFilter === 'Angular'">
            Angular
         </button>
-        <button class="work-area-button" (click)="showCategory('APIs')" [class.active]="currentFilter === 'APIs'">
+        <button class="button work-area-button" (click)="showCategory('APIs')" [class.active]="currentFilter === 'APIs'">
             APIs
          </button>
     </div>
@@ -20,7 +20,7 @@
         <div *ngFor="let project of filtered; let i=index">
             <div class="imageBox">
                 <div class="imageInn">
-                    <img class="work-img-properties" src="{{project.img}}">
+                    <img id="work-img-properties" class="work-img-properties" src="{{project.img}}">
                 </div>
                 <div class="hoverImg">
                     <div class="try-out-background">

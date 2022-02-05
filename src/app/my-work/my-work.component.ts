@@ -31,13 +31,30 @@ export class MyWorkComponent implements OnInit {
   filtered: any;
   currentFilter = '';
 
+
+  displayedImg: any = document.getElementById('work-img-properties');
+
+  deleteAllDisplayedImg() {
+    this.displayedImg.src = '';
+  }
+
   showAll() {
-    this.filtered = this.allProjects; // Hier stand vorher allProjects
-    this.currentFilter = '';
+    //this.deleteAllDisplayedImg();
+    setTimeout(() => {
+      //this.displayedImg.src = '{{project.img}}';
+      this.filtered = this.allProjects; // Hier stand vorher allProjects
+      this.currentFilter = '';
+    }, 500);
+
   }
   showCategory(category: any) {
-    this.filtered = this.allProjects.filter(project => project.category === category);
+    //this.deleteAllDisplayedImg();
+    setTimeout(() => {
+      //this.displayedImg.src = '{{project.img}}';
+      this.filtered = this.allProjects.filter(project => project.category === category);
     this.currentFilter = category;
+    }, 500);
+    
   }
 
   visitProject(url: string) {
