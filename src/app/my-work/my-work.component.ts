@@ -47,14 +47,14 @@ export class MyWorkComponent implements OnInit {
 
   allProjects = [
     {
-      img: 'assets/img/portfolio/kanban_board3.png',
+      img: 'assets/img/portfolio/kanban_board4.png',
       title: 'Join-Kanban-Board',
       shortInformation: 'JavaScript and group project - based project management',
       url: 'http://gruppe-95.developerakademie.com/',
       category: 'JavaScript',
     },
     {
-      img: 'assets/img/portfolio/el_pollo_loco.png',
+      img: 'assets/img/portfolio/el_pollo_loco3.png',
       title: 'EL POLLO LOCO',
       shortInformation: 'JavaScript - based jump and run game.',
       url: './assets/portfolio/el_pollo_loco/index.html',
@@ -75,7 +75,7 @@ export class MyWorkComponent implements OnInit {
     //  category: 'Angular',
     //},
     {
-      img: 'assets/img/portfolio/pokédex.png',
+      img: 'assets/img/portfolio/pokédex3.png',
       title: 'Pokédex',
       shortInformation: "A tabular overview (type, strengths and abilities) of the Pokémon`s",
       url: './assets/portfolio/pokédex/index.html',

@@ -54,6 +54,19 @@
     height: 412px;
     margin: 16px;
     object-fit: cover;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 //#work-img-try-out-parent .hidden-child {
@@ -83,6 +96,7 @@
 .try-out-background {
     width: 412px;
     height: 412px;
+    object-fit: cover;
     margin: 16px;
     background-color: rgba(255, 255, 255, 0.9);
     opacity: 0.9;
