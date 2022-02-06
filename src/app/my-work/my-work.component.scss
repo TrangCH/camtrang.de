@@ -127,7 +127,7 @@
 
 .imageBox:hover .hoverImg {
     display: block;
-    animation: fadeInAnimation ease 1.5s;
+    animation: fadeInAnimation ease-in-out 1.5s;
 }
 
 .try-out-background {
