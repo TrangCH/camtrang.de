@@ -24,7 +24,7 @@
                 </div>
                 <div class="hoverImg">
 
-                    <div class="try-out-background" *ngIf="fadeInAnimation"> <!-- *ngIf="fadeInAnimation"-->
+                    <div class="try-out-background-mouseover" *ngIf="fadeInAnimation"> <!-- *ngIf="fadeInAnimation"-->
                         <p class="try-out-title"><b>{{ project.title }}</b></p>
                         <div class="try-out-short-information">
                             {{ project.shortInformation }}
@@ -34,7 +34,7 @@
                         </button>
                     </div>
 
-                    <div class="try-out-background" *ngIf="!fadeInAnimation"> <!-- *ngIf="fadeInAnimation"-->
+                    <div class="try-out-background-mouseout" *ngIf="!fadeInAnimation"> <!-- *ngIf="fadeInAnimation"-->
                         <p class="try-out-title"><b>{{ project.title }}</b></p>
                         <div class="try-out-short-information">
                             {{ project.shortInformation }}
