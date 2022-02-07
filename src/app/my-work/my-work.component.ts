@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyWorkComponent implements OnInit {
   id: any;
+  fadeInAnimation = false;
 
   constructor() { }
   ngOnInit(): void {

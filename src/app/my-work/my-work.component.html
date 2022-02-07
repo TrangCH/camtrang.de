@@ -18,12 +18,13 @@
     </div>
     <div class="work-img-area-background">
         <div *ngFor="let project of filtered; let i=index">
-            <div class="imageBox">
+            <div class="imageBox" (mouseover)="fadeInAnimation=true" (mouseout)="fadeInAnimation=false"> <!---->
                 <div class="imageInn">
                     <img id="work-img-properties" class="work-img-properties" src="{{project.img}}">
                 </div>
                 <div class="hoverImg">
-                    <div class="try-out-background">
+
+                    <div class="try-out-background" *ngIf="fadeInAnimation"> <!-- *ngIf="fadeInAnimation"-->
                         <p class="try-out-title"><b>{{ project.title }}</b></p>
                         <div class="try-out-short-information">
                             {{ project.shortInformation }}
@@ -32,6 +33,17 @@
                             View project
                         </button>
                     </div>
+
+                    <div class="try-out-background" *ngIf="!fadeInAnimation"> <!-- *ngIf="fadeInAnimation"-->
+                        <p class="try-out-title"><b>{{ project.title }}</b></p>
+                        <div class="try-out-short-information">
+                            {{ project.shortInformation }}
+                       </div>
+                        <button (click)="visitProject(project.url)" class="try-out-button">
+                            View project
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>

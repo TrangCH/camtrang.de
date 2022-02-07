@@ -90,10 +90,9 @@
     height: 412px;
     margin: 16px;
     object-fit: cover;
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease-in-out 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
 }
 
 @keyframes fadeInAnimation {
@@ -103,6 +102,15 @@
     100% {
         opacity: 1;
      }
+}
+
+@keyframes fadeOutAnimation {
+    100% {
+        opacity: 1;
+     }
+    0% {
+        opacity: 0;
+    }
 }
 
 //#work-img-try-out-parent .hidden-child {
@@ -127,10 +135,10 @@
 
 .imageBox:hover .hoverImg {
     display: block;
-    animation: fadeInAnimation ease-in-out 1.5s;
+    animation: fadeInAnimation ease-in-out 1s;
 }
 
-.try-out-background {
+.try-out-background-mouseover {
     width: 412px;
     height: 412px;
     object-fit: cover;
@@ -141,6 +149,21 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    animation: fadeInAnimation ease-in-out 1s;
+}
+
+.try-out-background-mouseout {
+    width: 412px;
+    height: 412px;
+    object-fit: cover;
+    margin: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fadeOutAnimation ease-in-out 1s;
 }
 
 .try-out-title {
