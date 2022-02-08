@@ -17,8 +17,8 @@
          </button>
     </div>
     <div class="work-img-area-background">
-        <div *ngFor="let project of filtered; let i=index">
-            <div class="imageBox" (mouseover)="fadeInAnimation=true" (mouseout)="fadeInAnimation=false"> <!---->
+        <div *ngFor="let project of filtered; let i=index" (mouseover)="fadeInAnimation=true" (mouseout)="fadeInAnimation=false">
+            <div class="imageBox"> <!---->
                 <div class="imageInn">
                     <img id="work-img-properties" class="work-img-properties" src="{{project.img}}">
                 </div>
