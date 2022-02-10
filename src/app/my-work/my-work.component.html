@@ -16,7 +16,7 @@
             APIs
          </button>
     </div>
-    <mat-grid-list cols="breakpoint" rowHeight="2:2" (window:resize)="onResize($event)" class="work-img-area-background">
+    <mat-grid-list [cols]="breakpoint" rowHeight="2:2" (window:resize)="onResize($event)" class="work-img-area-background"> <!-- class="work-img-area-background"-->
         <mat-grid-tile *ngFor="let project of filtered; let i=index"> <!-- (mouseenter)="fadeInAnimation=true" (mouseleave)="fadeInAnimation=false"-->
             <div class="imageBox"> <!---->
                 <div class="imageInn">

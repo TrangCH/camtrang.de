@@ -15,11 +15,11 @@ export class MyWorkComponent implements OnInit {
 
   ngOnInit(): void {
     this.filtered = this.allProjects;
-    this.breakpoint = (window.innerWidth <= 1000) ? 2 : 3;
+    this.breakpoint = (window.innerWidth <= 1000) ? 1 : 2;
   }
 
   onResize(event: any) {
-    this.breakpoint = (event.target.innerWidth <= 1000) ? 2 : 3;
+    this.breakpoint = (event.target.innerWidth <= 1000) ? 1 : 2;
   }
 
   myWorkTopic = [
