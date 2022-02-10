@@ -15,6 +15,8 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { PrivacyComponent } from './privacy/privacy.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

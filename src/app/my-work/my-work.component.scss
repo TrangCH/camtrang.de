@@ -201,6 +201,16 @@
     text-align: center;
 }
 
+mat-grid-list {
+    margin: 0 4rem;
+}
+
+mat-grid-tile {
+    transition: 225ms all ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
 @media(max-width: 800px) {
     .my-work-area-background {
         padding-top: 32px;

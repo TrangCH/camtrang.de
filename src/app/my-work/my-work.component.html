@@ -16,8 +16,8 @@
             APIs
          </button>
     </div>
-    <div class="work-img-area-background">
-        <div *ngFor="let project of filtered; let i=index" (mouseover)="fadeInAnimation=true" (mouseout)="fadeInAnimation=false">
+    <mat-grid-list cols="2" rowHeight="2:2" class="work-img-area-background">
+        <mat-grid-tile *ngFor="let project of filtered; let i=index" (mouseenter)="fadeInAnimation=true" (mouseleave)="fadeInAnimation=false">
             <div class="imageBox"> <!---->
                 <div class="imageInn">
                     <img id="work-img-properties" class="work-img-properties" src="{{project.img}}">
@@ -46,7 +46,7 @@
 
                 </div>
             </div>
-        </div>
-    </div>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>
 
