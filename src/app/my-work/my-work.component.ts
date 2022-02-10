@@ -8,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class MyWorkComponent implements OnInit {
   id: any;
   fadeInAnimation = false;
+  breakpoint!: number;
+  event: any;
 
   constructor() { }
+
   ngOnInit(): void {
     this.filtered = this.allProjects;
+    this.breakpoint = (window.innerWidth <= 1000) ? 2 : 3;
+  }
+
+  onResize(event: any) {
+    this.breakpoint = (event.target.innerWidth <= 1000) ? 2 : 3;
   }
 
   myWorkTopic = [
@@ -48,14 +56,15 @@ export class MyWorkComponent implements OnInit {
     }, 500);
 
   }
+
   showCategory(category: any) {
     //this.deleteAllDisplayedImg();
     setTimeout(() => {
       //this.displayedImg.src = '{{project.img}}';
       this.filtered = this.allProjects.filter(project => project.category === category);
-    this.currentFilter = category;
+      this.currentFilter = category;
     }, 500);
-    
+
   }
 
   visitProject(url: string) {
@@ -64,6 +73,13 @@ export class MyWorkComponent implements OnInit {
 
 
   allProjects = [
+    {
+      img: 'assets/img/portfolio/pokédex3.png',
+      title: 'Pokédex',
+      shortInformation: "A tabular overview (type, strengths and abilities) of the Pokémon`s",
+      url: './assets/portfolio/pokédex/index.html',
+      category: 'APIs',
+    },
     {
       img: 'assets/img/portfolio/kanban_board4.png',
       title: 'Join-Kanban-Board',
@@ -92,13 +108,7 @@ export class MyWorkComponent implements OnInit {
     //  url: 'https://www.cam-huy-trang.developerakademie.com/assets/portfolio/simple-crm/index.html',
     //  category: 'Angular',
     //},
-    {
-      img: 'assets/img/portfolio/pokédex3.png',
-      title: 'Pokédex',
-      shortInformation: "A tabular overview (type, strengths and abilities) of the Pokémon`s",
-      url: './assets/portfolio/pokédex/index.html',
-      category: 'APIs',
-    },
+
   ];
 
 
