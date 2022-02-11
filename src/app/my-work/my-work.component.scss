@@ -81,15 +81,17 @@
 
 .work-img-area-background {
     display: flex;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    max-height: 800px;
 }
 
+
 .work-img-properties {
-    width: 412px;
-    height: 412px;
-    margin: 16px;
-    object-fit: contain;
+    width: 312px; // 412px
+    height: 312px;
+    object-fit: cover;
     animation: fadeInAnimation ease-in-out 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -123,6 +125,12 @@
 
 .imageBox {
     position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
 }
 
@@ -130,6 +138,7 @@
     position: absolute;
     left: 0;
     top: 0;
+   
     display: none;
 }
 
@@ -139,10 +148,10 @@
 }
 
 .try-out-background { //mouseenter
-    width: 412px;
-    height: 412px;
-    object-fit: cover;
-    margin: 16px;
+    width: 312px;
+    height: 312px;
+    
+    // margin: 16px;
     background-color: rgba(255, 255, 255, 0.9);
     opacity: 0.9;
     display: flex;
@@ -157,7 +166,7 @@
 .try-out-background-mouseleave {
     width: 412px;
     height: 412px;
-    object-fit: cover;
+
     margin: 16px;
     background-color: rgba(255, 255, 255, 0.9);
     opacity: 0.9;
@@ -204,18 +213,106 @@
 }
 
 mat-grid-list {
-    margin: 0 1rem;
+  
+  //max-width: 500px;
 }
 
 mat-grid-tile {
     transition: 225ms all ease-in-out;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    justify-content: space-between;
+    align-items: baseline;
+    
 }
 
-mat-grid-tile-content {
+mat-grid-tile > mat-grid-tile-content {
+    display: block !important;
+    align-items: baseline !important;
+    justify-content: space-between !important;
 
 }
+
+@media(max-width: 1250px) {
+    mat-grid-tile {
+        transition: 225ms all ease-in-out;
+        display: block;
+        justify-content: space-between;
+        align-items: baseline;
+        
+    }
+    
+    mat-grid-tile > mat-grid-tile-content {
+        display: block !important;
+        align-items: baseline !important;
+        justify-content: space-between !important;
+    
+    }
+
+    .work-img-properties {
+        width: 400px; // 412px
+        height: 400px;
+        object-fit: cover;
+        animation: fadeInAnimation ease-in-out 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    .try-out-background { //mouseenter
+        width: 400px;
+        height: 400px;
+        
+        // margin: 16px;
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 0.9;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        position: absolute;
+        flex-wrap: wrap;
+        //@error: fadeInAnimation ease-in-out 1s;
+    }
+}
+
+@media(max-width: 1100px) {
+
+    .work-img-properties {
+        width: 350px; // 412px
+        height: 350px;
+    }
+
+    .try-out-background { //mouseenter
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media(max-width: 1000px) {
+
+    .work-img-properties {
+        width: 300px; // 412px
+        height: 300px;
+    }
+
+    .try-out-background { //mouseenter
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 900px) {
+
+    .work-img-properties {
+        width: 450px; // 412px
+        height: 450px;
+    }
+
+    .try-out-background { //mouseenter
+        width: 450px;
+        height: 450px;
+    }
+}
+
 
 @media(max-width: 800px) {
     .my-work-area-background {
