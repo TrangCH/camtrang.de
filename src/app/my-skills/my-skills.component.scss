@@ -4,8 +4,8 @@
     flex-direction: column;
     padding-top: 32px;
     padding-bottom: 64px;
-    padding-left: 128px;
-    padding-right: 128px;
+    padding-left: 125px;
+    padding-right: 125px;
 }
 
 .headline-my-skills {
@@ -16,8 +16,8 @@
 }
 
 .all-skills-area {
-    padding-left: 128px;
-    padding-right: 128px;
+    padding-left: 125px;
+    padding-right: 125px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -64,15 +64,15 @@
     font-size: 1.1em;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 1125px) {
     .my-skills-area-background {
         background-color: #1a1a1a;
         display: flex;
         flex-direction: column;
         padding-top: 64px;
         padding-bottom: 0px;
-        padding-left: 64px;
-        padding-right: 64px;
+        padding-left: 110px;
+        padding-right: 110px;
     }
     
     .headline-my-skills {
@@ -81,8 +81,8 @@
     }
     
     .all-skills-area {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: 110px;
+        padding-right: 110px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -122,26 +122,26 @@
     }
 }
 
-@media(max-width: 670px) {
+@media(max-width: 965px) {
     .my-skills-area-background {
         background-color: #1a1a1a;
         padding-top: 64px;
         padding-bottom: 0px;
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 95px;
+        padding-right: 95px;
     }
-    
-    .headline-my-skills {
-        font-size: 2em;
-    }
-    
+
     .all-skills-area {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 95px;
+        padding-right: 95px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding-bottom: 64px;
+    }
+    
+    .headline-my-skills {
+        font-size: 2em;
     }
     
     .skills-components-background {
@@ -171,13 +171,147 @@
     }
 }
 
+@media(max-width: 860px) {
+    .my-skills-area-background {
+        background-color: #1a1a1a;
+        padding-top: 64px;
+        padding-bottom: 0px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .all-skills-area {
+        padding-left: 80px;
+        padding-right: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 64px;
+    }
+}
+
+@media(max-width: 790px) {
+    .my-skills-area-background {
+        background-color: #1a1a1a;
+        padding-top: 64px;
+        padding-bottom: 0px;
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+
+    .all-skills-area {
+        padding-left: 65px;
+        padding-right: 65px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 64px;
+    }
+}
+
+@media(max-width: 730px) {
+    .my-skills-area-background {
+        background-color: #1a1a1a;
+        padding-top: 64px;
+        padding-bottom: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .all-skills-area {
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 64px;
+    }
+}
+
+@media(max-width: 675px) {
+    .my-skills-area-background {
+        background-color: #1a1a1a;
+        padding-top: 64px;
+        padding-bottom: 0px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .all-skills-area {
+        padding-left: 35px;
+        padding-right: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 64px;
+    }
+}
+
+@media(max-width: 610px) {
+    .my-skills-area-background {
+        background-color: #1a1a1a;
+        padding-top: 64px;
+        padding-bottom: 0px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .all-skills-area {
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 64px;
+    }
+}
+
+@media(max-width: 570px) {
+    .my-skills-area-background {
+        background-color: #1a1a1a;
+        padding-top: 64px;
+        padding-bottom: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .all-skills-area {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 64px;
+    }
+}
+
 @media(max-width: 540px) {
     .my-skills-area-background {
         background-color: #1a1a1a;
-        padding-top: 32px;
+        padding-top: 64px;
         padding-bottom: 0px;
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .all-skills-area {
+        padding-left: 5px;
+        padding-right: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 64px;
+    }
+}
+
+
+@media(max-width: 510px) {
+    .my-skills-area-background {
+        background-color: #1a1a1a;
+        padding-top: 64px;
+        padding-bottom: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     
     .headline-my-skills {
@@ -185,8 +319,8 @@
     }
     
     .all-skills-area {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -228,7 +362,7 @@
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 445px) {
     .my-skills-area-background {
         background-color: #1a1a1a;
         padding-top: 32px;
