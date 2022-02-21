@@ -77,6 +77,11 @@ button:disabled {
     }
 }
 
+.mandatory-field {
+    color: white;
+    font-size: 0.8em;
+}
+
 @media (max-width: 800px) {
     .contact-me-area-background {
         background-color: black;
