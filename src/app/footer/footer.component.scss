@@ -1,8 +1,8 @@
 .footer-area {
     padding-left: 150px;
     padding-right: 150px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,8 +38,6 @@
     .footer-area {
         padding-left: 32px;
         padding-right: 32px;
-        margin-top: 50px;
-        margin-bottom: 50px;
     }
 
 }
@@ -63,8 +61,6 @@
     .footer-area {
         padding-left: 16px;
         padding-right: 16px;
-        margin-top: 50px;
-        margin-bottom: 50px;
 
         flex-direction: column-reverse;
     }
