@@ -20,42 +20,33 @@
         </button>
     </div>
 
-    <mat-grid-list [cols]="breakpoint" rowHeight="1:1" (window:resize)="onResize($event)"
-        class="work-img-area-background">
-        <!-- class="work-img-area-background"-->
-        <mat-grid-tile *ngFor="let project of filtered; let i=index">
-            <!-- (mouseenter)="fadeInAnimation=true" (mouseleave)="fadeInAnimation=false"-->
-            <div class="imageBox">
-                <!-- -->
-                <div class="imageInn">
-                    <img id="work-img-properties" class="work-img-properties" src="{{project.img}}">
-                </div>
-                <div class="hoverImg">
-
-                    <div class="try-out-background">
-                        <!-- class="try-out-background-mouseenter" *ngIf="fadeInAnimation"-->
-                        <p class="try-out-title"><b>{{ project.title }}</b></p>
-                        <div class="try-out-short-information">
-                            {{ project.shortInformation }}
-                        </div>
-                        <button (click)="visitProject(project.url)" class="try-out-button">
-                            View project
-                        </button>
+    <div class="mat-grid-list-area">
+        <mat-grid-list [cols]="breakpoint"
+            class="work-img-area-background"> <!-- rowHeight="1:1" (window:resize)="onResize($event)"-->
+            <!-- class="work-img-area-background"-->
+            <mat-grid-tile *ngFor="let project of filtered; let i=index">
+                <!-- (mouseenter)="fadeInAnimation=true" (mouseleave)="fadeInAnimation=false"-->
+                <div class="imageBox">
+                    <!-- -->
+                    <div class="imageInn">
+                        <img id="work-img-properties" class="work-img-properties" src="{{project.img}}">
                     </div>
+                    <div class="hoverImg">
 
-                    <!--<div class="try-out-background-mouseleave" *ngIf="!fadeInAnimation">  *ngIf="fadeInAnimation"
-                        <p class="try-out-title"><b>{{ project.title }}</b></p>
-                        <div class="try-out-short-information">
-                            {{ project.shortInformation }}
-                       </div>
-                        <button (click)="visitProject(project.url)" class="try-out-button">
-                            View project
-                        </button>
-                    </div>-->
+                        <div class="try-out-background">
+                            <!-- class="try-out-background-mouseenter" *ngIf="fadeInAnimation"-->
+                            <p class="try-out-title"><b>{{ project.title }}</b></p>
+                            <div class="try-out-short-information">
+                                {{ project.shortInformation }}
+                            </div>
+                            <button (click)="visitProject(project.url)" class="try-out-button">
+                                View project
+                            </button>
+                        </div>
 
+                    </div>
                 </div>
-            </div>
-        </mat-grid-tile>
-    </mat-grid-list>
-
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
 </div>
