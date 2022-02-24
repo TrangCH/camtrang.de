@@ -3,10 +3,9 @@
     display: flex;
     flex-direction: column;
     padding-top: 32px;
-    padding-bottom: 0px;
-    padding-left: 16px;
-    padding-right: 16px;
-    //max-height: 900px;
+    padding-bottom: 64px;
+    padding-left: 460px;
+    padding-right: 460px; // 325
 }
 
 .headline-my-work {
@@ -14,6 +13,7 @@
     font-size: 2em;
     display: flex;
     justify-content: center;
+    padding-top: 64px;
 }
 
 .work-area-button-background {
@@ -79,16 +79,11 @@
     transition: 0s;
 }
 
-.mat-grid-list-area {
-    display: flex;
-    justify-content: center;
-}
-
 .work-img-area-background {
     display: flex;
+    //flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 624px;
 }
 
 .work-img-properties {
@@ -118,6 +113,14 @@
     }
 }
 
+//#work-img-try-out-parent .hidden-child {
+//visibility: hidden;
+//}
+
+//#work-img-try-out-parent:hover .hidden-child {
+//visibility: visible;
+//}
+
 .imageBox {
     position: relative;
     left: 0;
@@ -133,6 +136,7 @@
     position: absolute;
     left: 0;
     top: 0;
+
     display: none;
 }
 
@@ -213,7 +217,6 @@ mat-grid-tile {
     display: block;
     justify-content: space-between;
     align-items: baseline;
-    
 }
 
 mat-grid-tile > mat-grid-tile-content {
@@ -222,17 +225,371 @@ mat-grid-tile > mat-grid-tile-content {
     justify-content: space-between !important;
 }
 
-@media (max-width: 912px) {
+@media (max-width: 1550px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 410px;
+        padding-right: 410px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 360px;
+        padding-right: 360px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 312px;
+        padding-right: 312px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 312px;
+        padding-right: 312px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 235px;
+        padding-right: 235px;
+    }
+
+    .work-img-properties {
+        width: 300px; // 412px
+        height: 300px;
+    }
+
+    .try-out-background {
+        //mouseenter
+        width: 300px;
+        height: 300px;
+    }
+
+    .try-out-button {
+        width: 155px;
+        height: 75px;
+        font-size: 1.1em;
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 185px;
+        padding-right: 185px;
+    }
+
+    .work-img-properties {
+        width: 300px; // 412px
+        height: 300px;
+    }
+
+    .try-out-background {
+        //mouseenter
+        width: 300px;
+        height: 300px;
+    }
+
+    .try-out-button {
+        width: 155px;
+        height: 75px;
+        font-size: 1.1em;
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+
+    .work-img-properties {
+        width: 300px; // 412px
+        height: 300px;
+    }
+
+    .try-out-background {
+        //mouseenter
+        width: 300px;
+        height: 300px;
+    }
+
+    .try-out-button {
+        width: 155px;
+        height: 75px;
+        font-size: 1.1em;
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 900px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .work-img-properties {
+        width: 400px; // 412px
+        height: 400px;
+    }
+
+    .try-out-background {
+        //mouseenter
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 850px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 175px;
+        padding-right: 175px;
+    }
+}
+
+@media (max-width: 800px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .headline-my-work {
+        font-size: 2em;
+        padding-top: 0px;
+    }
+
+    .work-area-button-background {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .work-area-button {
+        width: 112px;
+        height: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
 
     .work-img-area-background {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        width: 624px;
-    } 
+    }
 
     .work-img-properties {
-        width: 300px; // 475px
+        width: 400px;
+        height: 400px;
+    }
+
+    .imageBox {
+        position: relative;
+    }
+
+    .imageBox .hoverImg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+    }
+
+    .imageBox:hover .hoverImg {
+        display: block;
+    }
+
+    .try-out-background {
+        width: 400px;
+        height: 400px;
+    }
+
+    .try-out-title {
+        color: #fa2759;
+        font-size: 1.25em;
+    }
+
+    .try-out-button {
+        width: 175px;
+        height: 75px;
+        font-size: 1.25em;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 64px;
+    }
+}
+
+@media (max-width: 750px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 135px;
+        padding-right: 135px;
+    }
+
+    .work-img-properties {
+        width: 400px;
+        height: 400px;
+    }
+
+    .try-out-background {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 700px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+
+    .work-img-properties {
+        width: 375px;
+        height: 375px;
+    }
+
+    .try-out-background {
+        width: 375px;
+        height: 375px;
+    }
+}
+
+@media (max-width: 650px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    .work-img-properties {
+        width: 350px;
+        height: 350px;
+    }
+
+    .try-out-background {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .work-img-properties {
+        width: 325px;
+        height: 325px;
+    }
+
+    .try-out-background {
+        width: 325px;
+        height: 325px;
+    }
+
+    .try-out-button {
+        font-size: 1.2em;
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 550px) {
+    .my-work-area-background {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    .work-img-properties {
+        width: 325px;
+        height: 325px;
+    }
+
+    .try-out-background {
+        width: 325px;
+        height: 325px;
+    }
+
+    .try-out-button {
+        font-size: 1.1em;
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+}
+@media (max-width: 500px) {
+    .my-work-area-background {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .work-img-properties {
+        width: 325px;
+        height: 325px;
+    }
+
+    .try-out-background {
+        width: 325px;
+        height: 325px;
+    }
+
+    .try-out-button {
+        font-size: 1.1em;
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 460px) {
+    .my-work-area-background {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .work-img-properties {
+        width: 300px;
         height: 300px;
     }
 
@@ -240,7 +597,128 @@ mat-grid-tile > mat-grid-tile-content {
         width: 300px;
         height: 300px;
     }
+
+    .try-out-button {
+        font-size: 1.1em;
+        margin-top: 40px;
+        margin-bottom: 32px;
+    }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 424px) {
+    .my-work-area-background {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .work-img-properties {
+        width: 300px;
+        height: 300px;
+    }
+
+    .try-out-background {
+        width: 300px;
+        height: 300px;
+    }
+
+    .try-out-button {
+        font-size: 1.1em;
+        margin-top: 50px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    .my-work-area-background {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .work-img-properties {
+        width: 285px;
+        height: 285px;
+    }
+
+    .try-out-background {
+        width: 285px;
+        height: 285px;
+    }
+
+    .try-out-button {
+        font-size: 1.1em;
+        margin-top: 50px;
+        margin-bottom: 24px;
+    }
+
+    .work-area-button {
+        color: white;
+        border: 2px solid #fa2759;
+        width: 156px;
+        height: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 3px;
+        margin-right: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .my-work-area-background {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .work-img-properties {
+        width: 275px;
+        height: 275px;
+    }
+
+    .try-out-background {
+        width: 275px;
+        height: 275px;
+    }
+
+    .try-out-button {
+        font-size: 1.1em;
+        margin-top: 50px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 350px) {
+    .my-work-area-background {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .work-img-properties {
+        width: 250px;
+        height: 250px;
+    }
+
+    .try-out-background {
+        width: 250px;
+        height: 250px;
+    }
+
+    .try-out-button {
+        width: 145;
+        height: 65px;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 1em;
+        margin-top: 35px;
+        margin-bottom: 24px;
+    }
 }

@@ -21,7 +21,7 @@
     </div>
 
     <div class="mat-grid-list-area">
-        <mat-grid-list [cols]="breakpoint"
+        <mat-grid-list [cols]="breakpoint" rowHeight="1:1" (window:resize)="onResize($event)"
             class="work-img-area-background"> <!-- rowHeight="1:1" (window:resize)="onResize($event)"-->
             <!-- class="work-img-area-background"-->
             <mat-grid-tile *ngFor="let project of filtered; let i=index">
