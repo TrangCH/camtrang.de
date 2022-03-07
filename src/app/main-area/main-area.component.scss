@@ -37,7 +37,7 @@
     align-items: center;
     max-width: 256px;
     height: 64px;
-    font-size: 20px;
+    //font-size: 20px;
     text-decoration: none;
 
     &:hover {
@@ -50,6 +50,29 @@
         }
     }
 }
+
+.animated-text {
+    //font-family: monospace;
+    text-decoration: none;
+    font-size: 24px;
+    color: #2dfcd8;
+   
+    overflow: hidden;
+    //height: 1.1em;
+    word-wrap: break-word;
+    white-space: nowrap;
+    animation: typing 4s steps(10) forwards;
+   }
+   
+   @keyframes typing {
+     from { 
+       width: 0;
+     }
+   
+     to { 
+       width: 10ch;
+     }
+   }
 
 .img-myself {
     border-radius: 100%;
