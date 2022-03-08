@@ -51,28 +51,49 @@
     }
 }
 
+.animated-text-introduction {
+    text-decoration: none;
+    
+
+    overflow: hidden;
+    //height: 1.1em;
+    word-wrap: break-word;
+    white-space: nowrap;
+    animation: typing-introduction 4s steps(22) forwards;
+}
+
+@keyframes typing-introduction {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 22ch;
+    }
+}
+
 .animated-text {
     //font-family: monospace;
     text-decoration: none;
     font-size: 24px;
     color: #2dfcd8;
-   
+
     overflow: hidden;
     //height: 1.1em;
     word-wrap: break-word;
     white-space: nowrap;
     animation: typing 4s steps(10) forwards;
-   }
-   
-   @keyframes typing {
-     from { 
-       width: 0;
-     }
-   
-     to { 
-       width: 10ch;
-     }
-   }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 10ch;
+    }
+}
 
 .img-myself {
     border-radius: 100%;
@@ -98,32 +119,31 @@
     }
 }
 
-@media(max-width: 800px) {
-    
+@media (max-width: 800px) {
     .main-area-background {
         padding-top: 128px;
         padding-bottom: 0px;
         padding-left: 32px;
         padding-right: 32px;
     }
-    
+
     .main-area-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column-reverse;
     }
-    
+
     .introduction-area {
         color: white;
         min-width: 100%;
     }
-    
+
     .introduction {
         font-size: 3.2em;
         font-weight: 700;
     }
-    
+
     .contact-me-button {
         margin-top: 16px;
         display: flex;
@@ -133,56 +153,55 @@
         height: 64px;
         font-size: 20px;
         text-decoration: none;
-      
+
         &:hover {
             background-color: #2dfcd8;
             color: white;
             cursor: pointer;
-    
+
             a {
                 color: white;
             }
         }
     }
-    
+
     .img-myself {
         border-radius: 100%;
         width: 300px;
         height: 300px;
     }
-    
+
     .arrow-area {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 64px;
     }
-    
+
     .arrow {
         display: none;
         height: 85px;
         width: 124px;
-    
+
         &:hover {
             cursor: pointer;
         }
     }
 }
 
-@media(max-width: 500px) {
-    
+@media (max-width: 500px) {
     .main-area-background {
         padding-top: 128px;
         padding-bottom: 0px;
         padding-left: 16px;
         padding-right: 16px;
     }
-    
+
     .introduction {
         font-size: 2.4em;
         font-weight: 700;
     }
-    
+
     .contact-me-button {
         margin-top: 16px;
         max-width: 100%;
@@ -190,63 +209,62 @@
         font-size: 20px;
         text-decoration: none;
     }
-    
+
     .img-myself {
         border-radius: 100%;
         width: 256px;
         height: 256px;
     }
-    
+
     .arrow-area {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 64px;
     }
-    
+
     .arrow {
         display: none;
         height: 85px;
         width: 124px;
-    
+
         &:hover {
             cursor: pointer;
         }
     }
 }
 
-@media(max-width: 440px) {
-    
+@media (max-width: 440px) {
     .main-area-background {
         padding-top: 128px;
         padding-bottom: 0px;
         padding-left: 16px;
         padding-right: 16px;
     }
-    
+
     .introduction {
         font-size: 2em;
         font-weight: 600;
     }
-    
+
     .img-myself {
         border-radius: 100%;
         width: 225px;
         height: 225px;
     }
-    
+
     .arrow-area {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 64px;
     }
-    
+
     .arrow {
         display: none;
         height: 85px;
         width: 124px;
-    
+
         &:hover {
             cursor: pointer;
         }
