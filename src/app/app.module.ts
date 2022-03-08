@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { FeedbackContactFormPopUpComponent } from './feedback-contact-form-pop-up/feedback-contact-form-pop-up.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     AboutMeComponent,
     MyWorkComponent,
     ContactMeComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    FeedbackContactFormPopUpComponent
    
   ],
   imports: [
@@ -40,7 +43,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

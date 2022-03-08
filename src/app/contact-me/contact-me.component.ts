@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { FeedbackContactFormPopUpComponent } from '../feedback-contact-form-pop-up/feedback-contact-form-pop-up.component';
 
 
 
@@ -17,7 +19,7 @@ export class ContactMeComponent implements OnInit {
     message: '',
   };
 
-  constructor( private http: HttpClient) { }
+  constructor(private http: HttpClient, public dialog: MatDialog) { }
 
   // endPoint = "http://cam-huy-trang.developerakademie.com/assets/send_mail/send_mail.php";
 
@@ -42,7 +44,13 @@ export class ContactMeComponent implements OnInit {
       this.http
         .post(this.post.endPoint, this.post.body(this.contact))
         .subscribe({
-          next: (response) => console.log(response),
+          next: () => setTimeout(() => {
+            const dialogRef= this.dialog.open(FeedbackContactFormPopUpComponent);
+            dialogRef.afterClosed().subscribe(() => {
+              console.log('The dialog was closed');
+              window.location.reload();
+            });
+          }, 500), //console.log(response),
           error: (error) => console.error(error),
           complete: () => console.info('send post complete'),
         });
