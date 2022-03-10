@@ -51,47 +51,153 @@
     }
 }
 
-.animated-text-introduction {
-    text-decoration: none;
-    overflow: hidden;
-    //height: 1.1em;
-    word-wrap: break-word;
+//.animated-text-introduction {
+//    text-decoration: none;
+//    overflow: hidden;
+//    //height: 1.1em;
+//    word-wrap: break-word;
+//    white-space: nowrap;
+//    animation: typing-introduction 4s steps(33) forwards;
+//}
+
+//@keyframes typing-introduction {
+//    from {
+//        width: 0;
+//    }
+//
+//    to {
+//        width: 33ch;
+//    }
+//}
+
+.css-typing p {
+    border-right: .15em solid orange;
     white-space: nowrap;
-    animation: typing-introduction 4s steps(22) forwards;
-}
-
-@keyframes typing-introduction {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 22ch;
-    }
-}
-
-.animated-text {
-    //font-family: monospace;
-    text-decoration: none;
-    font-size: 24px;
-    color: #2dfcd8;
-
     overflow: hidden;
-    //height: 1.1em;
-    word-wrap: break-word;
-    white-space: nowrap;
-    animation: typing 4s steps(10) forwards;
-}
+  }
 
-@keyframes typing {
-    from {
-        width: 0;
+  .css-typing p:nth-child(1) {
+    width: 1.5em; // 7.3em
+    -webkit-animation: type 2s steps(4, end); // 2, 40
+    animation: type 2s steps(4, end); // 2. 40
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(2) {
+    width: 9em; // 11.5em
+    opacity: 0;
+    -webkit-animation: type2 2s steps(17, end); //40
+    animation: type2 2s steps(17, end);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .css-typing p:nth-child(3) {
+    width: 10em; // 7.3em;
+    opacity: 0;
+    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes type {
+    0% {
+      width: 0;
     }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type {
+    0% {
+      width: 0;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      border: none;
+    }
+  }
+  
+  @keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @-webkit-keyframes type2 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    99.9% {
+      border-right: .15em solid orange;
+    }
+    100% {
+      opacity: 1;
+      border: none;
+    }
+  }
+  
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
 
-    to {
-        width: 10ch;
-    }
-}
+
 
 .img-myself {
     border-radius: 100%;
