@@ -39,6 +39,9 @@ export class ContactMeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /**
+   * After click Send-button
+   */
   onSubmit(contactForm: NgForm) {
     if (contactForm.submitted && contactForm.form.valid) {
       this.http
@@ -50,7 +53,7 @@ export class ContactMeComponent implements OnInit {
               console.log('The dialog was closed');
               window.location.reload();
             });
-          }, 500), //console.log(response),
+          }, 500), 
           error: (error) => console.error(error),
           complete: () => console.info('send post complete'),
         });

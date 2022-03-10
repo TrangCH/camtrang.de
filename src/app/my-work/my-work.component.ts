@@ -15,12 +15,10 @@ export class MyWorkComponent implements OnInit {
 
   ngOnInit(): void {
     this.filtered = this.allProjects;
-    //this.breakpoint = (window.innerWidth <= 1000) ? 2 : 3;
     this.breakpoint = (window.innerWidth <= 900) ? 1 : 2;
   }
 
   onResize(event: any) {
-    //this.breakpoint = (event.target.innerWidth <= 1000) ? 2 : 3;
     this.breakpoint = (event.target.innerWidth <= 900) ? 1 : 2;
   }
 
@@ -50,9 +48,7 @@ export class MyWorkComponent implements OnInit {
   }
 
   showAll() {
-    //this.deleteAllDisplayedImg();
     setTimeout(() => {
-      //this.displayedImg.src = '{{project.img}}';
       this.filtered = this.allProjects; // Hier stand vorher allProjects
       this.currentFilter = '';
     }, 500);
@@ -60,9 +56,7 @@ export class MyWorkComponent implements OnInit {
   }
 
   showCategory(category: any) {
-    //this.deleteAllDisplayedImg();
     setTimeout(() => {
-      //this.displayedImg.src = '{{project.img}}';
       this.filtered = this.allProjects.filter(project => project.category === category);
       this.currentFilter = category;
     }, 500);
