@@ -311,6 +311,22 @@
   }
 }
 
+@media (max-width: 610px) {
+  .introduction {
+    font-size: 2.6em;
+    font-weight: 700;
+  }
+
+  .less-line-spacing {
+    margin-bottom: -36px;
+    word-wrap: break-word;
+  }
+
+  .less-ling-spacing-hi-margin-top {
+    margin-top: 0px;
+  }
+}
+
 @media (max-width: 500px) {
   .main-area-background {
     padding-top: 128px;
@@ -408,5 +424,21 @@
     &:hover {
       cursor: pointer;
     }
+  }
+}
+
+@media (max-width: 325px) {
+  .introduction {
+    font-size: 1.6em;
+    font-weight: 600;
+  }
+
+  .less-line-spacing {
+    margin-bottom: -24px;
+    word-wrap: break-word;
+  }
+
+  .less-ling-spacing-hi-margin-top {
+    margin-top: 0px;
   }
 }
