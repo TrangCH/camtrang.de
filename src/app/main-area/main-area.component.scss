@@ -5,15 +5,18 @@
 
 .main-area-background {
   background-color: black;
-  padding-top: 164px;
-  padding-bottom: 128px;
+  //padding-top: 112px;
+  //padding-bottom: 128px;
   padding-left: 128px;
   padding-right: 128px;
+  min-height: 100vh;
 }
 
 .main-area-content {
   display: flex;
   justify-content: space-between;
+  padding-top: 112px;
+
 }
 
 .introduction-area {
@@ -198,8 +201,8 @@
 }
 
 .arrow {
-  height: 85px;
-  width: 124px;
+  height: 83px;
+  width: 120px;
 
   &:hover {
     cursor: pointer;
@@ -212,6 +215,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column-reverse;
+    padding-bottom: 50px;
   }
   .introduction-area {
     color: white;
