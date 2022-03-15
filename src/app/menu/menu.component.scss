@@ -1,5 +1,5 @@
 header {
-    position: absolute;
+    position: absolute; // absolute
     top: 0px;
     left: 0;
     right: 0;
@@ -53,11 +53,13 @@ header {
 .headerWhite {
     background-color: white;
     color: black;
+    position: relative; // 
 }
 
 .header-black {
     background-color: black;
     color: white;
+    position: relative; //
 }
 
 @media (max-width: 800px) {

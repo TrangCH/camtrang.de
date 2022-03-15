@@ -1,5 +1,11 @@
-<!--<app-menu [darkMode]="router.url !== '/imprint'"></app-menu>-->
-<app-menu [darkMode]="router.url == '/'" [darkMode]="router.url == '/#home'" [darkMode]="router.url == '/#about-me'" [darkMode]="router.url == '/#my-work'" [darkMode]="router.url == '/#contact-me'"></app-menu>
-<!--<app-menu></app-menu>-->
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div class="background">
+    <div class="inner-background">
+        <!--<app-menu [darkMode]="router.url !== '/imprint'"></app-menu>-->
+        <app-menu [darkMode]="router.url == '/'" [darkMode]="router.url == '/#home'"
+            [darkMode]="router.url == '/#about-me'" [darkMode]="router.url == '/#my-work'"
+            [darkMode]="router.url == '/#contact-me'"></app-menu>
+        <!--<app-menu></app-menu>-->
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </div>
+</div>

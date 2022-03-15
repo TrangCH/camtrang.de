@@ -15,7 +15,7 @@
 .main-area-content {
   display: flex;
   justify-content: space-between;
-  padding-top: 112px;
+  padding-top: 8px;
 
 }
 
@@ -197,7 +197,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 64px;
+  margin-top: 16px;
+  padding-bottom: 32px;
 }
 
 .arrow {
@@ -254,7 +255,7 @@
 
 @media (max-width: 800px) {
   .main-area-background {
-    padding-top: 128px;
+    padding-top: 8px;
     padding-bottom: 0px;
     padding-left: 32px;
     padding-right: 32px;
@@ -333,7 +334,7 @@
 
 @media (max-width: 500px) {
   .main-area-background {
-    padding-top: 128px;
+    padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 16px;
     padding-right: 16px;
@@ -387,7 +388,7 @@
 
 @media (max-width: 440px) {
   .main-area-background {
-    padding-top: 128px;
+    padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 16px;
     padding-right: 16px;

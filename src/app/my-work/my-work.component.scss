@@ -669,6 +669,16 @@ mat-grid-tile > mat-grid-tile-content {
         margin-top: 50px;
         margin-bottom: 24px;
     }
+
+    .work-area-button {
+        color: white;
+        border: 2px solid #fa2759;
+        font-size: 0.75em;
+        width: 156px;
+        height: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
 
 @media (max-width: 350px) {
