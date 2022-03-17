@@ -4,8 +4,8 @@
     flex-direction: column;
     padding-top: 32px;
     padding-bottom: 64px;
-    padding-left: 450px;
-    padding-right: 450px; // 325
+    padding-left: 530px;
+    padding-right: 530px; // 325
 }
 
 .headline-my-work {
@@ -204,6 +204,24 @@ mat-grid-tile > mat-grid-tile-content {
     display: block !important;
     align-items: baseline !important;
     justify-content: space-between !important;
+}
+
+@media (max-width: 1700px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 515px;
+        padding-right: 515px;
+    }
+}
+
+@media (max-width: 1625px) {
+    .my-work-area-background {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 450px;
+        padding-right: 450px;
+    }
 }
 
 @media (max-width: 1550px) {
