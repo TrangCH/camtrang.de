@@ -9,6 +9,7 @@ header {
     padding-bottom: 16px;
     padding-left: 128px;
     padding-right: 128px;
+    font-size: 1.2em;
 
     display: flex;
     align-items: center;
@@ -26,7 +27,7 @@ header {
     }
 
     img {
-        height: 50px;
+        height: 65px;
         cursor: pointer;
     }
 }
@@ -53,13 +54,24 @@ header {
 .headerWhite {
     background-color: white;
     color: black;
-    position: relative; // 
+    position: relative; //
 }
 
 .header-black {
     background-color: black;
     color: white;
     position: relative; //
+}
+
+@media (max-width: 1400px) {
+    header {
+        font-size: 1em;
+
+        img {
+            height: 50px;
+            cursor: pointer;
+        }
+    }
 }
 
 @media (max-width: 800px) {
@@ -73,7 +85,7 @@ header {
     header {
         padding-left: 16px;
         padding-right: 16px;
-        
+
         a {
             margin-left: 24px;
         }
@@ -84,10 +96,9 @@ header {
     header {
         padding-left: 16px;
         padding-right: 16px;
-        
+
         a {
             margin-left: 20px;
         }
     }
 }
-
