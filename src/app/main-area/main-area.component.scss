@@ -16,7 +16,6 @@
   display: flex;
   justify-content: space-between;
   padding-top: 8px;
-
 }
 
 .introduction-area {
@@ -29,6 +28,7 @@
   letter-spacing: 0.05em;
   font-size: 3.2em;
   font-weight: 700;
+  margin-top: 65px;
 }
 
 .contact-me-button {
@@ -187,11 +187,12 @@
 
 .img-myself {
   border-radius: 100%;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   object-fit: cover;
-  object-position: -42px;
-  margin-right: 112px;
+  object-position: -50px;
+  margin-right: 32px;
+  margin-top: 32px;
 }
 
 .arrow-area {
@@ -199,7 +200,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 16px;
-  padding-bottom: 32px;
+  //padding-bottom: 32px;
 }
 
 .arrow {
@@ -211,14 +212,258 @@
   }
 }
 
+@media (max-width: 1475px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-area-background {
+    background-color: black;
+    //padding-top: 112px;
+    //padding-bottom: 128px;
+    padding-left: 128px;
+    padding-right: 128px;
+    min-height: 100vh;
+  }
+
+  .main-area-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+  }
+
+  .introduction-area {
+    color: white;
+    max-width: 55%;
+  }
+
+  .introduction {
+    color: white;
+    letter-spacing: 0.05em;
+    font-size: 4em;
+    font-weight: 700;
+    margin-top: 60px;
+  }
+
+  .contact-me-button {
+    color: #2dfcd8;
+    border: 1px solid #2dfcd8;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 265px;
+    height: 70px;
+    font-size: 30px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #2dfcd8;
+      color: white;
+      cursor: pointer;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .less-line-spacing {
+    margin-bottom: -60px;
+  }
+
+  .img-myself {
+    border-radius: 100%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: -50px;
+    margin-right: 0px;
+    margin-top: 25px;
+  }
+
+  .arrow-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  .arrow {
+    height: 112px;
+    width: 146px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-area-background {
+    background-color: black;
+    //padding-top: 112px;
+    //padding-bottom: 128px;
+    padding-left: 128px;
+    padding-right: 128px;
+    min-height: 100vh;
+  }
+
+  .main-area-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+  }
+
+  .introduction-area {
+    color: white;
+    max-width: 55%;
+  }
+
+  .introduction {
+    color: white;
+    letter-spacing: 0.05em;
+    font-size: 3.7em;
+    font-weight: 700;
+    margin-top: -25px;
+  }
+
+  .contact-me-button {
+    color: #2dfcd8;
+    border: 1px solid #2dfcd8;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    height: 65px;
+    font-size: 28px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #2dfcd8;
+      color: white;
+      cursor: pointer;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .less-line-spacing {
+    margin-bottom: -40px;
+  }
+
+  .img-myself {
+    border-radius: 100%;
+    width: 325px;
+    height: 325px;
+    object-fit: cover;
+    object-position: -50px;
+    margin-right: 0px;
+    margin-top: 15px;
+  }
+
+  .arrow-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  .arrow {
+    height: 112px;
+    width: 146px;
+  }
+}
+
 @media (max-width: 1250px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-area-background {
+    background-color: black;
+    //padding-top: 112px;
+    //padding-bottom: 128px;
+    padding-left: 128px;
+    padding-right: 128px;
+    min-height: 100vh;
+  }
+
+  .main-area-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+  }
+
+  .introduction-area {
+    color: white;
+    max-width: 55%;
+  }
+
+  .introduction {
+    color: white;
+    letter-spacing: 0.05em;
+    font-size: 3.2em;
+    font-weight: 700;
+    margin-top: 100px;
+  }
+
+  .contact-me-button {
+    color: #2dfcd8;
+    border: 1px solid #2dfcd8;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    height: 65px;
+    font-size: 25px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #2dfcd8;
+      color: white;
+      cursor: pointer;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .less-line-spacing {
+    margin-bottom: -24px;
+  }
+
   .img-myself {
     border-radius: 100%;
     width: 300px;
     height: 300px;
     object-fit: cover;
     object-position: -42px;
-    margin-right: 32px;
+    margin-right: 0px;
+    margin-top: 32px;
+  }
+
+  .arrow-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  .arrow {
+    height: 112px;
+    width: 146px;
   }
 }
 
@@ -251,6 +496,15 @@
     object-fit: cover;
     object-position: -42px;
     margin-right: 0px;
+    margin-top: 0px;
+  }
+
+  .introduction {
+    color: white;
+    letter-spacing: 0.05em;
+    font-size: 3.2em;
+    font-weight: 700;
+    margin-top: 32px;
   }
 
   .contact-me-button {
@@ -272,6 +526,11 @@
         color: white;
       }
     }
+  }
+
+  .arrow {
+    height: 84px;
+    width: 116px;
   }
 }
 
@@ -295,6 +554,7 @@
   .introduction {
     font-size: 3.2em;
     font-weight: 700;
+    margin-top: 32px;
   }
 
   .contact-me-button {
@@ -346,6 +606,7 @@
   .introduction {
     font-size: 2.6em;
     font-weight: 700;
+    margin-top: 0px;
   }
 
   .less-line-spacing {
