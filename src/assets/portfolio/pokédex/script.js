@@ -18,10 +18,36 @@ async function loadPokemons(limit, offset) {
         let response = await fetch(url);
         let pokemon = await response.json(); // Wandelt Text in JSON um
         pokemons.push(pokemon); // Push in das globale Array pokemons (siehe Zeile 3)
+
+        if (i == 38 || i == 75 || i == 113 || i == 150) {
+            let pokeList = pokemonList.results.length - 1;
+            let percent = i / pokeList;
+            percent = Math.round(percent * 100); // aufrunden
+
+           updateProgressBar(percent);
+           
+            if (i == 150) {
+                addDNoneProgressBarAfterWork();
+            }
+        }
     }
 
     console.log(pokemons);
     loadPokemon();
+}
+
+/**
+ * Update progress-bar
+ */
+function updateProgressBar(percent) {
+    document.getElementById('progress-bar').innerHTML = `${percent} %`;
+    document.getElementById('progress-bar').style = `width: ${percent}%;`; // Breite ändern
+}
+
+function addDNoneProgressBarAfterWork() {
+    setTimeout(() => {
+        document.getElementById('progress').classList.add("d-none");
+    }, 15500);
 }
 
 /**
