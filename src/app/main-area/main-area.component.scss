@@ -9,18 +9,23 @@
   //padding-bottom: 128px;
   padding-left: 128px;
   padding-right: 128px;
-  min-height: 100vh;
+  //min-height: 100vh;
+  height: calc(100vh - 112px);
 }
 
 .main-area-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 8px;
 }
 
 .introduction-area {
   color: white;
   max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 85px;
 }
 
 .introduction {
@@ -195,20 +200,34 @@
   margin-top: 32px;
 }
 
+.img-area {
+  display: flex;
+  align-items: center;
+  margin-left: 85px;
+}
+
 .arrow-area {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 16px;
   //padding-bottom: 32px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px;
 }
 
 .arrow {
-  height: 83px;
-  width: 120px;
+  height: 75px;
+  width: 100px;
 
   &:hover {
     cursor: pointer;
+    height: 95px;
+    width: 128px;
+    //position: relative;
+    //top: -25px;
   }
 }
 
@@ -224,12 +243,12 @@
     //padding-bottom: 128px;
     padding-left: 128px;
     padding-right: 128px;
-    min-height: 100vh;
+    //min-height: 100vh;
   }
 
   .main-area-content {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     padding-top: 8px;
   }
 
@@ -292,8 +311,8 @@
   }
 
   .arrow {
-    height: 112px;
-    width: 146px;
+    height: 75px;
+    width: 100px;
   }
 }
 
@@ -309,18 +328,23 @@
     //padding-bottom: 128px;
     padding-left: 128px;
     padding-right: 128px;
-    min-height: 100vh;
+    //min-height: 100vh;
   }
 
   .main-area-content {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     padding-top: 8px;
   }
 
-  .introduction-area {
-    color: white;
-    max-width: 55%;
+  .introduction {
+    padding-top: 56px;
+  }
+
+  .img-area {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
   }
 
   .introduction {
@@ -377,8 +401,8 @@
   }
 
   .arrow {
-    height: 112px;
-    width: 146px;
+    height: 75px;
+    width: 100px;
   }
 }
 
@@ -394,12 +418,12 @@
     //padding-bottom: 128px;
     padding-left: 128px;
     padding-right: 128px;
-    min-height: 100vh;
+    //min-height: 100vh;
   }
 
   .main-area-content {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     padding-top: 8px;
   }
 
@@ -450,7 +474,7 @@
     object-fit: cover;
     object-position: -42px;
     margin-right: 0px;
-    margin-top: 32px;
+    margin-top: 70px;
   }
 
   .arrow-area {
@@ -462,15 +486,15 @@
   }
 
   .arrow {
-    height: 112px;
-    width: 146px;
+    height: 75px;
+    width: 100px;
   }
 }
 
 @media (max-width: 1100px) {
   .main-area-content {
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     align-items: center;
     flex-direction: column-reverse;
     padding-bottom: 16px;
@@ -479,6 +503,7 @@
   .introduction-area {
     color: white;
     min-width: 100%;
+    margin-right: 0px;
   }
 
   .less-line-spacing {
@@ -529,8 +554,8 @@
   }
 
   .arrow {
-    height: 84px;
-    width: 116px;
+    height: 75px;
+    width: 100px;
   }
 }
 
@@ -593,8 +618,8 @@
 
   .arrow {
     //display: none;
-    height: 85px;
-    width: 124px;
+    height: 75px;
+    width: 100px;
 
     &:hover {
       cursor: pointer;
@@ -661,8 +686,8 @@
 
   .arrow {
     //display: none;
-    height: 85px;
-    width: 124px;
+    height: 75px;
+    width: 100px;
 
     &:hover {
       cursor: pointer;
@@ -707,8 +732,8 @@
 
   .arrow {
     display: none;
-    height: 85px;
-    width: 124px;
+    height: 75px;
+    width: 100px;
 
     &:hover {
       cursor: pointer;
