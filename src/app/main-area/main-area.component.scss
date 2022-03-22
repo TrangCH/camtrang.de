@@ -618,11 +618,13 @@
 }
 
 @media (max-width: 500px) {
+  
   .main-area-background {
     padding-top: 0px;
     padding-bottom: 0px;
     padding-left: 16px;
     padding-right: 16px;
+    height: calc(100vh - 96px);
   }
 
   .introduction {
