@@ -70,7 +70,7 @@ export class MyWorkComponent implements OnInit {
 
   allProjects = [
     {
-      img: 'assets/img/portfolio/pokédex5.png', // Photos 780px Quadrat
+      img: 'assets/img/portfolio/pokédex7.png', // Photos 780px Quadrat pokédex5.png
       title: 'Pokédex',
       shortInformation: "A tabular overview (type, strengths and abilities) of the Pokémon`s",
       url: './assets/portfolio/pokédex/index.html',
