@@ -198,12 +198,13 @@
   align-items: center;
 }
 
-.arrow-area {
+.read-more {
+  color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 16px;
-  //padding-bottom: 32px;
   position: absolute;
   left: 0;
   right: 0;
@@ -211,13 +212,15 @@
 }
 
 .arrow {
-  height: 75px;
-  width: 100px;
+  object-fit: contain;
+  width: 45px;
+  margin-top: 12px;
+  // height: 75px;
+  // width: 100px;
 
   &:hover {
     cursor: pointer;
-    height: 85px;
-    width: 114px;
+    width: 50px;
     //position: relative;
     //top: -25px;
   }
@@ -289,17 +292,17 @@
     margin-right: 0px;
   }
 
-  .arrow-area {
+  .read-more {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 16px;
-    padding-bottom: 32px;
   }
 
   .arrow {
-    height: 75px;
-    width: 100px;
+    object-fit: contain;
+    width: 45px;
+    margin-top: 12px;
   }
 }
 
@@ -369,17 +372,17 @@
     margin-right: 0px;
   }
 
-  .arrow-area {
+  .read-more {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 16px;
-    padding-bottom: 32px;
   }
 
   .arrow {
-    height: 75px;
-    width: 100px;
+    object-fit: contain;
+    width: 45px;
+    margin-top: 12px;
   }
 }
 
@@ -449,17 +452,17 @@
     margin-right: 0px;
   }
 
-  .arrow-area {
+  .read-more {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 16px;
-    padding-bottom: 32px;
   }
 
   .arrow {
-    height: 75px;
-    width: 100px;
+    object-fit: contain;
+    width: 45px;
+    margin-top: 12px;
   }
 }
 
@@ -487,8 +490,8 @@
 
   .img-myself {
     border-radius: 100%;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     object-position: -42px;
     margin-right: 0px;
@@ -497,7 +500,7 @@
   .introduction {
     color: white;
     letter-spacing: 0.05em;
-    font-size: 3.2em;
+    font-size: 3em;
     font-weight: 700;
   }
 
@@ -506,9 +509,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 220px;
-    height: 56px;
-    font-size: 24px;
+    max-width: 190px;
+    height: 46px;
+    font-size: 20px;
     text-decoration: none;
 
     &:hover {
@@ -523,9 +526,13 @@
   }
 
   .arrow {
-    display: none;
-    height: 75px;
-    width: 100px;
+    object-fit: contain;
+    width: 30px;
+    margin-top: 6px;
+
+    &:hover {
+      width: 34px;
+    }
   }
 }
 
@@ -547,8 +554,12 @@
   }
 
   .introduction {
-    font-size: 3.2em;
+    font-size: 2.7em;
     font-weight: 700;
+  }
+
+  .less-line-spacing {
+    margin-bottom: -45px;
   }
 
   .contact-me-button {
@@ -556,9 +567,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 220px;
-    height: 56px;
-    font-size: 24px;
+    max-width: 190px;
+    height: 46px;
+    font-size: 20px;
     text-decoration: none;
 
     &:hover {
@@ -574,11 +585,11 @@
 
   .img-myself {
     border-radius: 100%;
-    width: 276px;
-    height: 276px;
+    width: 250px;
+    height: 250px;
   }
 
-  .arrow-area {
+  .read-more {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -587,24 +598,32 @@
 
   .arrow {
     //display: none;
-    height: 75px;
-    width: 100px;
+    object-fit: contain;
+    width: 30px;
+    margin-top: 6px;
 
     &:hover {
       cursor: pointer;
+      width: 34px;
     }
   }
 }
 
 @media (max-width: 610px) {
   .introduction {
-    font-size: 2.6em;
+    font-size: 2.4em;
     font-weight: 700;
     margin-top: -24px;
   }
 
   .contact-me-button {
     margin-top: 50px;
+  }
+
+  .img-myself {
+    object-position: -34px;
+    width: 225px;
+    height: 225px;
   }
 
   .less-line-spacing {
@@ -618,7 +637,6 @@
 }
 
 @media (max-width: 500px) {
-  
   .main-area-background {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -628,7 +646,7 @@
   }
 
   .introduction {
-    font-size: 2.4em;
+    font-size: 2.3em;
     font-weight: 700;
   }
 
@@ -644,28 +662,30 @@
   .contact-me-button {
     margin-top: 50px;
     max-width: 100%;
-    height: 56px;
-    font-size: 22px;
+    height: 50px;
+    font-size: 20px;
     text-decoration: none;
   }
 
   .img-myself {
     border-radius: 100%;
-    width: 256px;
-    height: 256px;
+    width: 225px;
+    height: 225px;
   }
 
-  .arrow-area {
+  .read-more {
     margin-top: 4px;
   }
 
   .arrow {
     //display: none;
-    height: 75px;
-    width: 100px;
+    object-fit: contain;
+    width: 30px;
+    margin-top: 6px;
 
     &:hover {
       cursor: pointer;
+      width: 34px;
     }
   }
 }
@@ -681,6 +701,7 @@
   .introduction {
     font-size: 1.7em;
     font-weight: 600;
+    margin-top: -20px;
   }
 
   .contact-me-button {
@@ -706,7 +727,7 @@
     height: 200px;
   }
 
-  .arrow-area {
+  .read-more {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -714,9 +735,9 @@
   }
 
   .arrow {
-    display: none;
-    height: 75px;
-    width: 100px;
+    object-fit: contain;
+    width: 30px;
+    margin-top: 6px;
 
     &:hover {
       cursor: pointer;
@@ -737,5 +758,11 @@
 
   .less-ling-spacing-hi-margin-top {
     margin-top: 0px;
+  }
+
+  .contact-me-button {
+    margin-top: 40px;
+    height: 36px;
+    font-size: 16px;
   }
 }
