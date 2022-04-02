@@ -1,9 +1,16 @@
 .data-protection-background {
     margin-top: 64px;
-    padding-left: 128px;
-    padding-right: 128px;
+    padding-left: 275px;
+    padding-right: 275px;
     padding-bottom: 150px;
     word-wrap: break-word;
+}
+
+@media (max-width: 1475px) {
+    .data-protection-background {
+        padding-left: 128px;
+        padding-right: 128px;
+    }
 }
 
 @media(max-width: 800px) {

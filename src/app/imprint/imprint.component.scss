@@ -1,8 +1,15 @@
 .imprint-background {
     margin-top: 64px;
-    padding-left: 128px;
-    padding-right: 128px;
+    padding-left: 275px;
+    padding-right: 275px;
     padding-bottom: 150px;
+}
+
+@media (max-width: 1475px) {
+    .imprint-background {
+        padding-left: 128px;
+        padding-right: 128px;
+    }
 }
 
 @media(max-width: 800px) {
