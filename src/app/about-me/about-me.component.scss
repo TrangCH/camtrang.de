@@ -1,8 +1,8 @@
 .about-me-background {
     background-color: #1a1a1a;
     color: white;
-    padding-left: 128px;
-    padding-right: 128px;
+    padding-left: 275px; // 128
+    padding-right: 275px; // 128
     padding-bottom: 175px;
     display: flex;
     flex-direction: column;
@@ -83,6 +83,13 @@
     width: 24px;
     height: 24px;
 
+}
+
+@media(max-width: 1475) {
+    .about-me-background {
+        padding-left: 128px; // 128
+        padding-right: 128px; // 128
+    }
 }
 
 @media(max-width: 800px) {

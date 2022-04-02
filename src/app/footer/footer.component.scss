@@ -2,8 +2,8 @@
     box-shadow: 0px 0px 14px -6px;
 
     background-color: white;
-    padding-left: 128px;
-    padding-right: 128px;
+    padding-left: 275px; // 128
+    padding-right: 275px; // 128
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -33,6 +33,13 @@
     width: 200px;
     display: flex;
     justify-content: flex-end;
+}
+
+@media(max-width: 1475) {
+    .footer-area {
+        padding-left: 128px; // 128
+        padding-right: 128px; // 128
+    }
 }
 
 @media(max-width: 800px) {

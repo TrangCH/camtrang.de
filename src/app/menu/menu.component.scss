@@ -7,8 +7,8 @@ header {
     z-index: 1;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 128px;
-    padding-right: 128px;
+    padding-left: 275px; // 128
+    padding-right: 275px; // 128
     font-size: 1.2em;
 
     display: flex;
@@ -63,9 +63,11 @@ header {
     position: relative; //
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1475px) {
     header {
         font-size: 1em;
+        padding-left: 128px; // 128
+        padding-right: 128px; // 128
 
         img {
             height: 50px;
