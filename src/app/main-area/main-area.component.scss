@@ -25,9 +25,9 @@
 
 .introduction {
   color: white;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   font-size: 3.2em;
-  font-weight: 700;
+  font-weight: 700; //700
 }
 
 .contact-me-button {
@@ -83,7 +83,7 @@
 }
 
 .css-typing p:nth-child(3) {
-  width: 10em; // 7.3em;
+  width: 10.5em; // 7.3em;
   opacity: 0;
   -webkit-animation: type3 5s steps(20, end), blink 0.5s step-end infinite alternate;
   animation: type3 5s steps(20, end), blink 0.5s step-end infinite alternate;
@@ -251,9 +251,9 @@
 
   .introduction {
     color: white;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     font-size: 4em;
-    font-weight: 700;
+    font-weight: 700; //700
   }
 
   .contact-me-button {
@@ -331,7 +331,7 @@
 
   .introduction {
     color: white;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     font-size: 3.7em;
     font-weight: 700;
   }
@@ -411,7 +411,7 @@
 
   .introduction {
     color: white;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     font-size: 3.2em;
     font-weight: 700;
   }
@@ -445,8 +445,8 @@
 
   .img-myself {
     border-radius: 100%;
-    width: 300px;
-    height: 300px;
+    width: 285px;
+    height: 285px;
     object-fit: cover;
     object-position: -42px;
     margin-right: 0px;
@@ -499,7 +499,7 @@
 
   .introduction {
     color: white;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     font-size: 3em;
     font-weight: 700;
   }
